@@ -1,0 +1,839 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>10.3 MONITORING AND CONTROL</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphstrong1
+	{font-weight:bold;}
+span.docemphasis1
+	{font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>10.3 MONITORING
+AND CONTROL</span></h3>
+
+<p class=doctext><span lang=EN-GB>The effectiveness of the review process
+depends on how well the process has been deployed. For example, if only two
+defects were found during the review of a 500-line program or a 20-page design
+document, clearly the review was not effective. The most common reason for a
+poor review is that it was not done with the proper focus and seriousness. Unless
+reviews are taken seriously, they will likely be a huge waste of time that does
+not give any due return, or they may be seen as a step to be checked off by
+performing it perfunctorily.</span></p>
+
+<p class=doctext><span lang=EN-GB>How does a project manager or a moderator
+evaluate whether a review has been effective so that she can decide the future
+course of action? One effective way of monitoring and controlling reviews is to
+use statistical process control (SPC) concepts implemented through control
+charts. Because the number of data points for reviews—particularly for code
+reviews—can be large, statistical techniques can be applied with confidence and
+rigor. This section discusses how Infosys monitors and controls reviews using
+statistical techniques.</span></p>
+
+<h4><a name=ch10lev2sec10></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>10.3.1 The Review Capability Baseline</span></h4>
+
+<p class=doctext><span lang=EN-GB>How can SPC be applied to monitoring reviews?
+To apply SPC, project managers must identify critical performance parameters,
+determine control limits for them, and then monitor the actual performance. They
+can build control charts by plotting the performance parameters of reviews and
+then use the plots to evaluate the effectiveness of a review. Another approach
+is to set the control limits for the various parameters and then use that range
+to determine the effectiveness. Although this latter approach has limitations
+because the run chart is not available, it is easy to apply. At Infosys, this
+latter approach is followed.</span></p>
+
+<p class=doctext><span lang=EN-GB>At Infosys, control limits have been
+determined for the following performance parameters: the coverage rate during
+preparation, the coverage rate during the group review meeting, the defect
+density for minor or cosmetic defects, and the defect density for serious or major
+defects (the overall defect density is simply the sum of the two preceding
+defect densities). These limits are determined from past data and from the
+review capability baseline. Creating and maintaining this baseline are
+important reasons for collecting summary data on reviews. </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch10lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch10table02#ch10table02"><span
+lang=EN-GB style='color:#003399'>Table 10.2</span></a><span lang=EN-GB> shows
+the group review capability baseline.</span></p>
+
+<p class=doctext><span lang=EN-GB>The group review baseline in </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch10lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch10table02#ch10table02"><span
+lang=EN-GB style='color:#003399'>Table 10.2</span></a><span lang=EN-GB> gives,
+for the various types of work products, the coverage rate during preparation,
+the coverage rate during review, and the defect density for minor and critical
+defects (the overall defect density is the sum of the two). The defect density
+is normalized with respect to size, where size is measured in the number of
+pages for all noncode work products and in lines of code for code work
+products. (For a design, size can also be measured in terms of the number of
+specification statements.) The coverage rate is stated in terms of size per
+unit effort, where effort is measured in person-hours. As you can see, for
+documents the coverage rates and defect densities are quite similar, but they
+are different for code (where the unit of size is also different).</span></p>
+
+<p class=doctext><span lang=EN-GB>The rates for one-person reviews can be
+expected to differ. Detailed design documents, test plans, and code undergo
+this form of review regularly. Hence, a one-person review baseline has been
+developed for these work products. In the baseline for one-person review of
+documents, the coverage rate per hour is about twice the corresponding coverage
+rate of group reviews; the defect detection rate per page is about half of that
+found with group reviews. For code, the coverage rate per hour is about the
+same, but the defect detection rate per LOC is about 30% less.</span></p>
+
+<p class=doctext><span lang=EN-GB>This baseline is the foundation for
+monitoring a review conducted in a project.</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=5 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch10table02></a><span
+  lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Table 10.2. Infosys
+  Review Capability Baseline</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Review Item</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span lang=EN-GB
+  style='font-size:10.5pt;font-family:Arial;color:black'>Preparation Coverage
+  Rate (If Different from Coverage Rate)</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Group Review Coverage Rate</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Defect Density Cosmetic/Minor</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Serious/Major Defect Density</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Requirements</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>5–7 pages/hour</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.5–1.5 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.1–0.3 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>High-level design</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>4–5 pages/hour (or 200–250 specification statements/hour)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.5–1.5 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.1–0.3 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Detailed design</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>3–4 pages/hour (or 70–100 specification statements/hour)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.5–1.5 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.2–0.6 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Code</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>160–200 LOC/hour</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>110–150 LOC/hour</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.01–0.06 defects/LOC</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.01–0.06 defects/LOC</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Integration test plan</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>5–7 pages/hour</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.5–1.5 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.1–0.3 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Integration test cases</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>3–4 pages/hour</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>System test plan</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>5–7 pages/hour</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.5–1.5 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.1–0.3 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>System test cases</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>3–4 pages/hour</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Project management and configuration management plan</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>4–6 pages/hour</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>2–4 pages/hour</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.6–1.8 defects/page</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.1–0.3 defects/page</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<h4><a name=ch10lev2sec11></a><span style='font-size:13.0pt;font-family:Arial'>10.3.2
+Analysis and Control Guidelines</span></h4>
+
+<p class=doctext><span lang=EN-GB>The ranges given in the baseline are used to
+determine whether the performance of the review falls within acceptable limits.
+This check is specified as an exit criterion for the review process. Project
+managers can define the exit criteria as in-range checking of all the various
+parameters, but because detecting defects is the central purpose of reviews,
+the exit criterion is that the overall defect density should lie within the
+specified limits. (Another option is to check that the defect densities for the
+two types of defects are within the appropriate ranges.) If the number of
+defects found during the review is within the range given in the baseline, the
+review is considered effective, the exit criteria are satisfied, and no further
+action is needed for this review.</span></p>
+
+<p class=doctext><span lang=EN-GB>Instead of using the review capability
+baseline, a project manager can monitor reviews using an SPC tool developed
+in-house. This tool is essentially a spreadsheet that has the capability
+baseline data built into it. It also has data about the defect injection rate,
+defect removal efficiencies, organization-wide quality capability, and so on. From
+these data, the tool determines the performance specifications for a
+review—that is, the range in which its outcome is expected to fall if the
+quality goal is to be met. The SPC tool gives warnings when a piece of review
+data falls outside either the control limits or the expected limits (defined
+shortly).</span></p>
+
+<p class=doctext><span lang=EN-GB>If the density of defects found in a review
+is not within the range given in the capability baseline, it does not
+automatically mean failure of the review. The project manager or the moderator
+critically evaluates the situation and decides on the next steps. The
+preparation rate and review rate become very useful here; if the review rate is
+&quot;too fast&quot; compared with that given in the baseline, the reason for
+the ineffectiveness of the review is relatively clear. The defect densities for
+minor and critical defects can also be useful in this analysis. Although the
+moderator or the project manager can use any technique to determine the cause
+of performance deviation and the corrective and preventive actions that should
+be taken, a set of guidelines, shown in </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch10lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch10table03#ch10table03"><span
+lang=EN-GB style='color:#003399'>Table 10.3</span></a><span lang=EN-GB>, helps
+in this endeavor.</span></p>
+
+<p class=doctext><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch10lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch10table03#ch10table03"><span
+lang=EN-GB style='color:#003399'>Table 10.3</span></a><span lang=EN-GB>
+includes two groups of guidelines: one set that is applicable when the defect
+density is below the range, and another set that is applicable when the defect
+density is above the range. Both cases suggest that something abnormal may have
+taken place, and the situation must be examined carefully. </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch10lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch10table03#ch10table03"><span
+lang=EN-GB style='color:#003399'>Table 10.3</span></a><span lang=EN-GB> lists
+some possible causes; the project leader or moderator can use this information
+to identify the cause and then decide on the corrective actions for this review
+and preventive actions for future reviews.</span></p>
+
+<p class=doctext><span lang=EN-GB>Static control limits work well when the
+process is operating in a steady state. However, if changes are consciously
+made to the process, control charts must be used with care because the process
+performance is expected to change. If changes in the process are likely to be
+regular, it is best to have dynamic control limits. One way to do this is to
+reset the control limits to new values based on the past <span
+class=docemphasis1>n</span> performance data points (<span class=docemphasis1>n</span>
+must be selected; it can be some number greater than about 10 to 15). With this
+approach, if the process is changed, its performance will change, and after a
+few data points, the control limits will reflect the performance capability of the
+changed process.</span></p>
+
+<p class=doctext><span lang=EN-GB>Another approach is to adjust the performance
+data or control limits based on the expected impact of the process changes. For
+example, if the review process is changed and if it is expected that the
+reviews will detect 10% more defects, then when a point falls outside the
+control limits, this fact should be taken into account during the analysis.</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=2 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch10table03></a><span
+  lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Table 10.3. Analysis
+  Guidelines for Review</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Possible Reason</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Actions to Consider</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span lang=EN-GB
+  style='font-size:10.5pt;font-family:Arial;color:black'>If Defects Found Are
+  Less Than Norms</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Work product was very simple.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Convert group reviews of similar work products
+  to one-person reviews.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Combine reviews.</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Reviews may not be thorough.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Check coverage rate; if too low, reschedule a
+  review, perhaps with a different team.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Reviewers do not have sufficient training on group reviews or
+  experience with the reviewed material.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Schedule or conduct group review training.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Re-review with a different team.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Work product is of very good quality.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Confirm this fact by coverage rate, experience
+  of the author, reviewers, and so on; see if this quality can be duplicated in
+  other parts of the project.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Revise defect prediction in downstream
+  activities; see if there are general process improvement lessons.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span lang=EN-GB
+  style='font-size:10.5pt;font-family:Arial;color:black'>If Defects Found Are
+  More Than Norms</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Work product is of low quality.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Examine training needs for author.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Have the work product redone.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Consider reassigning future tasks (e.g.,
+  assign easier tasks only to the author).</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Work product is very complex.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Ensure good review or testing downstream.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Increase estimates for system testing.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Break the work product into smaller
+  components.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>There are too many minor defects (and too few major defects).</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Identify causes of minor defects; correct in
+  the future by suitably enhancing checklists and making authors aware of the
+  common causes.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Reviewer may have insufficient understanding
+  of the work product. If so, hold an overview meeting or have another review
+  with different reviewers.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Reference document against which review was done is not precise
+  and clear.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Get the reference document reviewed and
+  approved.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Reviewed modules are the first ones in the project.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Analyze the defects, update the review
+  checklist, and inform developers. </span>Schedule training.</p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span lang=EN-GB>This latter approach is used at Infosys when
+defect prevention is employed during reviews. With DP, the defect injection
+rate is expected to decline. Consequently, the defect density detected in
+reviews is also likely to fall. If a project is using DP, then during project
+planning the expected impact of DP is also recorded. Using the defect injection
+rate, the expected reduction from using DP, and the defect detection rate, the <span
+class=docemphasis1>expected limits</span> for performance are established. If a
+review performance falls outside these limits, it is carefully examined for
+causes.</span></p>
+
+<h4><a name=ch10lev2sec12></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>10.3.3 An Example</span></h4>
+
+<p class=doctext><span lang=EN-GB>Consider the summary report for the group
+review of a project management plan given in </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch10lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch10table04#ch10table04"><span
+lang=EN-GB style='color:#003399'>Table 10.4</span></a><span lang=EN-GB>. This
+summary covers a group review of a 14-page project management plan. The total
+number of minor and cosmetic defects found was 16, and the total number of
+major defects found was 3. Thus, the defect density found is 16/14 = 1.2 minor
+defects per page, and 3/14 = 0.2 major defects per page. Both rates are within
+the range given in the capability baseline, so the exit criteria are satisfied
+and it can be assumed that the review was conducted properly.</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=2 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch10table04></a><span
+  lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Table 10.4. Summary
+  Report of a Review</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Project</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext><span lang=EN-GB>Work product type</span></p>
+  <p class=doctext><span lang=EN-GB>Size of product</span></p>
+  <p class=doctext>Moderator</p>
+  <p class=doctext>Reviewer(s)</p>
+  <p class=doctext>Author</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext><span lang=EN-GB>Project plan, v. 1.0</span></p>
+  <p class=doctext><span lang=EN-GB>14 pages</span></p>
+  <p class=doctext><span lang=EN-GB>Meera</span></p>
+  <p class=doctext><span lang=EN-GB>Biju, Meera</span></p>
+  <p class=doctext>JC</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Effort (Person-Hours)</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>a.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Overview
+  meeting</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>b.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Preparation</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>c.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Group
+  review meeting</p>
+  <p class=doctext>Total Effort</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext>0</p>
+  <p class=doctext>10 person-hours</p>
+  <p class=doctext>10 person-hours</p>
+  <p class=doctext>20 person-hours</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Defects</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist><span lang=EN-GB>Number of critical defects</span></p>
+  <p class=doclist><span lang=EN-GB>Number of major defects</span></p>
+  <p class=doclist><span lang=EN-GB>Number of minor defects</span></p>
+  <p class=doclist><span lang=EN-GB>Number of cosmetic defects</span></p>
+  <p class=doclist><span lang=EN-GB>Number of defects detected during
+  preparation</span></p>
+  <p class=doclist><span lang=EN-GB>Number of defects detected during group
+  review meeting</span></p>
+  <p class=doclist><span lang=EN-GB>Number of open issues raised</span></p>
+  <p class=doctext><span lang=EN-GB>Total number of defects</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext>0</p>
+  <p class=doctext>3</p>
+  <p class=doctext>12</p>
+  <p class=doctext>4</p>
+  <p class=doctext>—</p>
+  <p class=doctext>—</p>
+  <p class=doctext>1</p>
+  <p class=doctext>19</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Result</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Moderator reexamination</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Recommendations for Next Phase</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext><span lang=EN-GB>Units to undergo group review</span></p>
+  <p class=doctext><span lang=EN-GB>Units to undergo one-person review</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext>N/A</p>
+  <p class=doctext>N/A</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Comments (Moderator)</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>The plan has been well documented and presented.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span lang=EN-GB
+  style='font-size:10.5pt;font-family:Arial;color:black'>Prepared by:</span></span><span
+  lang=EN-GB style='font-size:10.5pt;font-family:Arial;color:black'> Meera; <span
+  class=docemphstrong1>Date:</span> xx-xx-xxxx</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span lang=EN-GB>Although not needed for this review because
+the exit criteria are satisfied, other rates can also be checked. The review
+team had 4 members, each of whom spent 2.5 hours in individual review; the
+review meeting lasted 2.5 hours. Thus, the coverage rate during preparation and
+review was 14/2.5 = 5.6 pages per hour, which is within the range for
+preparation but somewhat higher for review.</span></p>
+
+<p class=doctext><span lang=EN-GB>When summary data is given to the SPC tool,
+it graphically displays the performance of this review, along with the control
+limits and expected limits.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

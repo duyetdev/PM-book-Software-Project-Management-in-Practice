@@ -1,0 +1,1053 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>11.4 DEFECT ANALYSIS AND PREVENTION</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+span.docemphstrong1
+	{font-weight:bold;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>11.4 DEFECT
+ANALYSIS AND PREVENTION</span></h3>
+
+<p class=doctext><span lang=EN-GB>Defect prevention aims to learn from defects
+found so far on the project and to prevent defects in the rest of the project. As
+discussed in </span><a
+href="http:// /?xmlid=0-201-73721-3/ch05#ch05"><span
+lang=EN-GB style='color:#003399'>Chapter 5</span></a><span lang=EN-GB>, defect
+prevention activities are usually done twice in a project: once when about 20%
+of the modules have been coded and unit tested, and again when 50% of the
+modules have been coded and unit tested. The main tasks of defect prevention
+are to perform Pareto analysis to identify the main defect types, perform
+causal analysis to identify the causes of defects, and identify solutions to
+attack the causes. Here we discuss how these tasks are performed in a project.</span></p>
+
+<h4><a name=ch11lev2sec9></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>11.4.1 Performing Pareto Analysis</span></h4>
+
+<p class=doctext><span lang=EN-GB>A common statistical technique used for
+analyzing causes, <span class=docemphasis1>Pareto analysis</span> is one of the
+primary tools for quality management.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch11lev1sec7#ch11entry07"><sup><span
+lang=EN-GB style='color:#003399'>7</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch11lev1sec7#ch11entry08"><sup><span
+lang=EN-GB style='color:#003399'>8</span></sup></a><span lang=EN-GB> It is also
+sometimes called the <span class=docemphasis1>80-20 rule</span>: 80% of the
+problems come from 20% of the possible sources. In software it can mean that
+80% of the defects stem from 20% of the root causes or that 80% of the defects
+are found in 20% of the code.</span></p>
+
+<p class=doctext><span lang=EN-GB>The first step in defect prevention is to
+draw a Pareto chart from the defect data. The number of defects found of
+different types is computed from the defect data and is plotted as a bar chart
+in decreasing order. Along with the bar chart, another chart is plotted on the
+same graph showing the cumulative number of defects as we move from types of
+defects on the left of the x-axis to the right of the x-axis. The Pareto chart
+makes it immediately clear in visual as well as quantitative terms which are
+the main types of defects, and also which types of defects together form
+80%–85% of the total defects. Instead of plotting the number of defects, you
+can plot a weighted sum by assigning different weights to different types of
+defects.</span></p>
+
+<p class=doctext><span lang=EN-GB>The overall procedure for doing the Pareto
+analysis is as follows:</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><a
+name=ch11pr01></a><span lang=EN-GB>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=1>List all the defects identified so
+far.</span></p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=2>Calculate the total number of
+defects by type.</span></p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=3>Sort defects by type in descending
+order of number of defects.</span></p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=4>Calculate the percentage of each
+defect type with respect to the total number of defects detected.</span></p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=5>Identify the defect type that is
+the cause for about 80% of the total defects.</span></p>
+
+</span>
+
+<p class=doctext><span lang=EN-GB>For example, consider the Pareto chart of the
+defect data for the ACE project shown in </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec4&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11fig05#ch11fig05"><span
+lang=EN-GB style='color:#003399'>Figure 11.5</span></a><span lang=EN-GB>. In
+this project, features are being added to an existing system. The defects data
+for all previous enhancements was used for this analysis. As you can see, the
+highest number of defects are logic defects, followed by user interface defects
+and standards defects. Defects in these three categories together account for
+more than 88% of the total defects, and the defects in the top two categories
+account for more than 75%. Clearly, the target for defect prevention should be
+the top two or three categories.</span></p>
+
+<h5 align=center style='text-align:center'><a name=ch11fig05></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 11.5. Pareto chart for
+defects found in the ACE project</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=388 src="074_files/image001.gif" alt="graphics/11fig05.gif"></p>
+
+<h4><a name=ch11lev2sec10></a><span style='font-size:13.0pt;font-family:Arial'>11.4.2
+Performing Causal Analysis</span></h4>
+
+<p class=doctext>The Pareto chart helps to identify the main types of defects
+that have been found in the project so far and are likely to be found in the
+rest of the project unless action is taken. These defects can be treated as
+&quot;effects&quot; that you want to minimize in the future. To reduce these
+defects, you must find their main causes and then try to eliminate them. A <span
+class=docemphasis1>cause-effect</span> (CE) diagram can be used to determine
+the causes of the observed effects.<a
+href="http:// /?xmlid=0-201-73721-3/ch11lev1sec7#ch11entry07"><sup><span
+style='color:#003399'>7</span></sup></a><sup>,</sup><a
+href="http:// /?xmlid=0-201-73721-3/ch11lev1sec7#ch11entry08"><sup><span
+style='color:#003399'>8</span></sup></a> For example, the cause-effect diagram
+can be used to determine the main causes for the high number of GUI defects (or
+logic defects) in the ACE project. The main purpose of the CE diagram is to
+graphically represent the relationship between an effect and its various
+possible causes. Understanding the causes helps to identify solutions to
+eliminate them.</p>
+
+<p class=doctext>The first step in building a cause-effect diagram is to
+identify the effect to be analyzed. In the ACE example, the effect could be
+&quot;too many GUI errors.&quot; To identify the causes, you first establish
+some major categories of causes. For manufacturing, these major causes often
+are manpower, machines, methods, materials, measurement, and environment. For
+causal analysis at Infosys, the standard set of major causes of defects is
+process, people, technology, and training (training is separated from people
+because it shows up very often). The main structure of the diagram shows the
+effect as a box on the right; a straight horizontal line extends from the box,
+and an angular line for each major cause connects to the main line.</p>
+
+<p class=doctext>To analyze the causes, the key is to ask, &quot;Why does this
+cause produce this effect?&quot; for each of the major causes. The answers to
+these questions become the subcauses and are represented as short horizontal
+lines joining the line representing the major cause. Then the same question is
+asked for the causes identified. This &quot;Why-Why-Why&quot; process is
+repeated until all the <span class=docemphasis1>root causes</span> have been
+identified—that is, the causes for which asking &quot;Why&quot; no longer makes
+sense. When all the causes are marked in the diagram, the final picture looks
+like a fish-bone structure, and hence the cause-effect diagram is also called a
+<span class=docemphasis1>fish-bone</span> diagram, or Ishikawa diagram after
+the name of its inventor.</p>
+
+<p class=doctext>The main steps in drawing a cause-effect diagram are as
+follows<a
+href="http:// /?xmlid=0-201-73721-3/ch11lev1sec7#ch11entry08"><sup><span
+style='color:#003399'>8</span></sup></a>:</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><a
+name=ch11pr02></a>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span value=1>Clearly define the problem (the effect) to be studied. For
+defect prevention, it typically is &quot;too many defects of type X.&quot;</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=2>Draw an arrow from left to right with a box containing the effect drawn
+at the head. This is the backbone of the diagram.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=3>Determine the major categories of causes. These could be the standard
+categories or some variation to suit the problem.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=4>Write these major categories in boxes and connect them with diagonal
+arrows to the backbone. These form the major bones of the diagram.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=5>Brainstorm for the subcauses of the major causes by asking repeatedly,
+for each major cause, &quot;Why does this major cause produce the effect?&quot;</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=6>Add the subcauses to the diagram clustered around the bone of the major
+cause. If necessary, further subdivide these causes. Stop when no worthwhile
+answer to the question can be found.</p>
+
+</span>
+
+<p class=doctext>When the fishbone diagram is finished, you have identified all
+the causes of the effect under study. However, most likely the initial fishbone
+diagram will have too many causes. Clearly, some of the causes have a greater
+impact than others. Hence, before completing the root cause analysis, you
+identify the top few causes, largely through discussion. For defect prevention,
+you can conduct this entire exercise for the top one or two categories of
+defects found in the Pareto analysis.</p>
+
+<p class=doctext><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec4&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11fig06#ch11fig06"><span
+style='color:#003399'>Figure 11.6</span></a> shows the fish-bone diagram for
+the ACE project. In this analysis, causes of the three major types of defects
+were discussed in one brainstorming session. Hence, our effect was &quot;too
+many logic/GUI/standards defects.&quot; When we asked the question, &quot;Why
+do people cause too many logic or GUI or standards defects?&quot; we identified
+some of the (almost obvious) reasons: lack of training, oversight (that is,
+incomplete attention), lack of technical skills. Similarly, when we asked,
+&quot;Why do processes cause too many logic/GUI/standards defects?&quot; the
+answers were &quot;standards not comprehensively documented&quot; and
+&quot;people not aware of standards.&quot; For technology the causes were
+&quot;unclear specifications&quot; and &quot;technical problems of tools.&quot;
+The brainstorming sessions for the causal analysis generated many more causes.
+After listing all the suggestions made during the meeting, the defect
+prevention team prioritized them by considering each of the defects and
+identifying its causes. The causes that show up most frequently are the ones
+that are high priority. They are shown in <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec4&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11fig06#ch11fig06"><span
+style='color:#003399'>Figure 11.6</span></a>.</p>
+
+<h5 align=center style='text-align:center'><a name=ch11fig06></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 11.6. Cause-effect diagram
+for the ACE project</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=313 src="074_files/image002.gif" alt="graphics/11fig06.gif"></p>
+
+<h4><a name=ch11lev2sec11></a><span style='font-size:13.0pt;font-family:Arial'>11.4.3
+Developing and Implementing Solutions</span></h4>
+
+<p class=doctext>So far we have discussed how to identify the types of
+frequently occurring defects and their root causes. The next phase is to take
+action to reduce the occurrence of defects.</p>
+
+<p class=doctext>The basic paradigm is the adage &quot;An ounce of prevention
+is worth a pound of cure.&quot; With defect prevention, you are not trying to
+&quot;cure&quot; the software of defects; instead, you are taking preventive
+actions so that the software does not &quot;fall sick&quot; from defects.
+Common prevention actions are creating or improving checklists, holding
+training programs and reviews, and using a specific tool. Sometimes, of course,
+you must take drastic actions such as changing the process or the technology.</p>
+
+<p class=doctext>The solutions, like the cause-effect analysis, are developed
+through a brainstorming session. Hence, these two steps are often done in the
+same session. This is how it is done at Infosys.</p>
+
+<p class=doctext>The preventive solutions are designated as action items that
+someone must perform. Hence, the implementation of the solutions is the key.
+Unless the solutions are implemented, they are of no use. At Infosys, along
+with the solution, the person responsible for implementing it is also
+specified. These action items are then added to the detailed schedule of tasks
+for the project, and their implementation is tracked like other tasks. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec4&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11table06#ch11table06"><span
+style='color:#003399'>Table 11.6</span></a> shows the root causes and the
+preventive actions developed for the ACE project. The proposed preventive
+actions are self-explanatory. They were scheduled in the MSP schedule of the
+project.</p>
+
+<p class=doctext>An important part of implementing these solutions is to see
+whether they are having the desired effect of reducing the injection of defects
+and thereby reducing the rework effort. Further analysis of defects found after
+the solutions have been implemented can give insight into this question.
+Generally, the next analysis for defect prevention can be used for this
+purpose. In addition to tracking the impact, such follow-up analysis has a
+tremendous reinforcing effect. Seeing the benefits convinces people as nothing
+else does. Hence, in addition to implementation, the impact of implementation
+should also be analyzed.</p>
+
+<h4><a name=ch11lev2sec12></a><span style='font-size:13.0pt;font-family:Arial'>11.4.4
+DP in the ACIC Project</span></h4>
+
+<p class=doctext>Now let's look at the DP process for the ACIC case study.
+Defect data after the first construction iteration were analyzed, and the
+frequency of the various types of defects is shown in <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec4&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11table07#ch11table07"><span
+style='color:#003399'>Table 11.7</span></a>. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec4&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11fig07#ch11fig07"><span
+style='color:#003399'>Figure 11.7</span></a> shows the Pareto chart for the
+defect data.</p>
+
+<h5 align=center style='text-align:center'><a name=ch11fig07></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 11.7. Pareto chart for
+defects</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=235 src="074_files/image003.gif" alt="graphics/11fig07.gif"></p>
+
+<p class=doctext>The main purpose of defect prevention activities is to reduce
+the defect injection rate. In the first iteration, the ACIC project manager
+knew that at least 57 defects were injected. From the effort data, he
+calculated the defect injection rate for the build phase as 0.33 defects per
+hour. As per the plan, it was expected that about 70% of the defects would be
+injected in the build activity, whose estimated effort was about 110 days
+(excluding the estimate for the rework effort). That is, as per the quality and
+effort plan, the defect injection rate during coding was expected to be around
+0.1 defects per person-hour. But after the first iteration, the defect
+injection rate was three times that much! Clearly, defect prevention activities
+were needed to achieve the target.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=4 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch11table06></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 11.6. Root Causes and
+  Proposed Solutions for the ACE Project</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Root Cause</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Preventive Actions</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Assigned to</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Implementation Date</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Standards not followed</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Do a group reading of the standards (after they have been
+  updated).</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Ensure that standards are followed in the mock projects done.</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>All</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>15/12/00</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Standards/checklists not documented well</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Do a group review of the standards with expert from outside and
+  then update the standards.</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Xxxx</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Next week</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Oversight (incomplete attention)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Effective self-review</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Rigorous code reviews</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>All</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext>Immediate effect</p>
+  <p class=doctext>Immediate effect</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Unclear/incorrect specifications</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Specification reviews</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>All</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Immediate effect</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of training</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Every new entrant will do a mock project, whose code will be
+  reviewed and tested thoroughly.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>A detailed specification and test plan will be made for the
+  same.</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>xxxx</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>29/12/00</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Technical problems</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Create awareness in people about the problems with the tools
+  and how to avoid them.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Write a BOK on this and make it available.</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of technical skills</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Document a BOK on topics like Sheridan grids, recordsets,
+  Active Reports.</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>xxxx</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>31/01/01</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext>To reduce the defect injection rate significantly, the project
+manager decided to tackle the top three categories of defects: logic,
+standards, and redundant code. A brainstorming session was held to identify the
+root causes and possible preventive actions. The regular procedure for
+brainstorming was followed. First, all the possible causes that anyone
+suggested were listed, and then the ones that were identified as the main
+culprits were separated out. For these causes, possible preventive actions were
+discussed and finally agreed on. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec4&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11table08#ch11table08"><span
+style='color:#003399'>Table 11.8</span></a> shows the final result of the
+causal analysis meeting—namely, the main root causes and preventive actions to
+be implemented. Many of these preventive actions became schedulable activities
+and were added to the project schedule and then later executed (those assigned
+to &quot;self&quot; were monitored informally).</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=2 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch11table07></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 11.7. Summary of Defect Data
+  after First Iteration, ACIC Project</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Defect Type</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Number of Defects</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Logic</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>19</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Standards</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>17</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Redundant code</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>11</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>UI</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>8</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Architecture</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>57</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext>The preventive actions given in the table are proposals by the
+team members; the project manager had to ascertain that they gave the desired result.
+Whether or not these measures were successful in reducing the defect injection
+rate could be checked only through the defect data.</p>
+
+<p class=doctext>The defect prevention activities were performed after the
+first construction iteration was done. Because the ACIC project had three such
+iterations, the defect injection rate after the next two iterations was also
+computed. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec4&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11fig08#ch11fig08"><span
+style='color:#003399'>Figure 11.8</span></a> shows the result of the analysis
+done after the other two iterations. This chart clearly shows the impact of
+implementing the preventive actions on the defect injection rate: It fell from
+more than 0.33 to less than 0.1!</p>
+
+<h5 align=center style='text-align:center'><a name=ch11fig08></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 11.8. Defect injection rate
+in different iterations, ACIC project</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=321 src="074_files/image004.gif" alt="graphics/11fig08.gif"></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=4 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch11table08></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 11.8. Root Causes and
+  Preventive Actions for the ACIC Project</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Defect Type (Number of Defects)</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Root Cause</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Preventive Action</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Assigned To</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Standards (17) </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of programming experience</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Training.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Self</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Oversight</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Developers should read the coding standards carefully and adhere
+  to them strictly.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Self </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of program specs use and need</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>(i) Come up with a method to generate program specs from
+  Rational Rose. (ii) Prepare a checklist for reviewing program specs. (iii)
+  Prepare guidelines for writing program specs.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>xxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Coding standards not updated</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Update coding standards and prepare a document listing the
+  applicable project-specific UI standards.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>xxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Redundant Code (11)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of language</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Training.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>xxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of object model and database</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>(i) Training on database structure. (ii) Developer should go
+  through the object model thoroughly.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Session on DB to be taken by xxxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of existing code</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Group to discuss in a meeting and finalize the set of general
+  method calls and identify where they should be called from.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Team</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of table model</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Understand the functionality of table model and dependency on
+  Table Selection and inform the team about it.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>xxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Logic (19)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of existing code</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Arrange code reading sessions.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Self</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of programming experience</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Training.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>xxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of sequence diagrams representations</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Give training in Rational Rose.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>xxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of database and associated processes.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Same as earlier.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>xxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of object model</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Same as earlier.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Self</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Oversight</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Self-testing by programmer should be made more thorough. A
+  session on how to test a small part of code to be taken.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Training by xxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of use cases</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Developers will do a requirement walkthrough.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Self</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of business rules</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>(i) Developer to refer to the matrix available that deals with
+  various rules. (ii) Developer to review use cases of earlier application for
+  better understanding of business rules.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Self </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of understanding of defect</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Follow-up with the reviewer should be taken by the owner of the
+  defect. An attempt shall be made to reduce any existing communication gaps by
+  more frequent follow-ups of the issues with the team/member concerned.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Team</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span lang=EN-GB>Reduction in defect injection implies that
+there are fewer defects to be detected and fixed. Hence, a successful defect
+prevention activity should lead to reduction in the rework effort that follows
+testing. </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec4&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11fig09#ch11fig09"><span
+lang=EN-GB style='color:#003399'>Figure 11.9</span></a><span lang=EN-GB> shows
+the rework effort in the three iterations. (This rework effort is obtained from
+the WAR because there is a different code for rework, and the program and
+module are also specified.) The rework effort after the first construction
+iteration was about 16% of the total effort for that iteration. This effort
+fell to about 5% and 3% in the next two construction cycles. The effort spent
+in the causal analysis was a few hours for data analysis, along with a
+brainstorming meeting of about in defect prevention.</span></p>
+
+<h5 align=center style='text-align:center'><a name=ch11fig09></a><span
+lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Figure 11.9. Rework
+reduction in ACIC due to defect prevention</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=215 src="074_files/image005.gif" alt="graphics/11fig09.gif"></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

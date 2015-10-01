@@ -1,0 +1,2666 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>12.2 THE ACIC CLOSURE ANALYSIS REPORT</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphstrong1
+	{font-weight:bold;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>12.2 THE ACIC
+CLOSURE ANALYSIS REPORT</span></h3>
+
+<p class=doctext><span lang=EN-GB>This section presents the closure analysis
+report of the ACIC project. First, the report gives some general information
+about the project. The performance summary that follows shows that the project
+had an effort overrun of about 19% caused by two major change requests. It also
+gives the planned versus actual data for team size, start and end dates,
+quality, productivity, cost of quality, defect injection rate, and defect
+removal efficiency. In almost all these parameters, the actual performance was
+very close to the estimated. The actual defect injection rate is about 26%
+lower than estimated, largely because of the defect prevention activities.</span></p>
+
+<p class=doctext><span lang=EN-GB>The report gives an overview of the process
+tailoring done in the project and specifies the internal and external tools
+that were used. For risk management, the report discusses the risks that were
+originally identified as well as the real risks that the project leader and
+SEPG feel existed for the project. As you can see, these are not the same; a
+new risk—conversion to VAJ 3.0—arose during the project. The notes on risk
+mitigation state that this risk was effectively managed by showing the impact
+of the change to the customer and then agreeing to postpone this conversion to
+a future version. For other risks, the notes assess the effectiveness of the
+risk mitigation strategies.</span></p>
+
+<p class=doctext><span lang=EN-GB>The report records the estimated and actual
+size in terms of the number of programs of different complexity. The size of
+the final output system is also given in LOC, along with the language. For this
+project, the size was about 33 KLOC of Java code, which translates to about
+1612 FP, and about 1K of COBOL code, which translates to about 12FP. This size
+figure was used to compute the project's productivity and quality.</span></p>
+
+<p class=doctext><span lang=EN-GB>Next, the estimated and actual schedules for
+various phases are given. Where the deviation is large (for example, in
+acceptance testing), the report gives a reason for the slippage.</span></p>
+
+<p class=doctext><span lang=EN-GB>Next are shown the data on effort. First, the
+report gives the distribution of actual effort over the various project phases,
+along with the task, review, and rework effort for each phase. Using this
+breakdown, the cost of quality has been computed at 31.4% for this project. Then
+the estimated and actual effort for the various stages of the project are
+given, along with the reason for deviation, where the deviation is large. As
+you can see, in this project the overall deviation is not very large, although
+for a few phases the deviation is substantial and is sometimes negative.</span></p>
+
+<p class=doctext><span lang=EN-GB>Next, the report contains an analysis of the
+defects. The distribution of defects among the various defect detection stages
+is given, along with the estimates for those stages. As with other parameters,
+the percent deviation is also shown. Here, too, the overall the deviation is
+–20%, although there is significant deviation for some phases. The report
+states the reason for the overall reduction and for the significant deviation
+in the distribution of actual defects. Then the defect data are given by stage
+detected and stage injected. Using these data, defect removal efficiencies for
+each defect removal stage are computed. In this project, the removal efficiency
+was 100% for requirements and design review, only 55% for code review, only 32%
+for unit testing, 91% for system testing, and 100% for acceptance testing (as
+only those defects removed before the end of acceptance testing are known). The
+overall defect removal efficiency is 97.5%, which is satisfactory; the goal was
+97%. The defects distribution with respect to severity and defect type has also
+been computed.</span></p>
+
+<p class=doctext><span lang=EN-GB>Finally, a causal analysis provides the
+possible process reasons for the situations in which the planned goals were not
+met. In this project, the reasons for performance deviation are discussed,
+along with the performance data. The lessons learned from this project are
+summarized here. The process assets that have been submitted are also recorded.</span></p>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>Closure Report of
+the ACIC Project</span></span></p>
+
+<p class=doctext><span class=docemphstrong1>1. GENERAL INFORMATION</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=2>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Project Code</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Xxxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Life Cycle </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Development, Full life cycle</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Business Domain</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Finance. Web-based application for managing accounts.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Project leader/Module Leader</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Xxxxxx</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Business Manager</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Software Quality Adviser </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Xxxxx</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>2. PERFORMANCE SUMMARY</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=5>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Performance Parameter</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Actual</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Estimated</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Deviation</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span lang=EN-GB
+  style='font-size:10.5pt;font-family:Arial;color:black'>Reasons for Deviation
+  (If Large)</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total Effort (person-days) </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>597</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>501</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>19%</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Two major change requests that came.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Peak Team Size</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>9</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>9</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>N/A</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Start Date</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>03 Apr 2000</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>03 Apr 2000</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>N/A</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>End Date</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>03 Nov 2000</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>30 Nov 2000</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>27 Days</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Two major change requests consumed more than 5% of the effort.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Quality (number of defects delivered per FP)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.002</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.0125</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Quality improved because of defect prevention and use of
+  incremental process.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Productivity</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>58</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>57</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>2%</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>N/A</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Cost of quality</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>31.4%</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>33%</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>5%</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>N/A</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Defect injection rate</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.022</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.03</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>–26%</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Improved because of defect prevention.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Defect removal efficiency </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>97.4</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>97</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Small</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>N/A</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>3. PROCESS DETAILS</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=2>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Process Tailoring</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Rational Unified Process was employed.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Development and analysis were done
+  iteratively—3 iterations for development and 2 for design and analysis.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Requirement traceability was done through
+  Requisite Pro tool.</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>4. TOOLS USED</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=2>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Notes on Tools Used</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>External Tools: VSS, VJA, Requisite Pro, MSP</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Internal Tools: BugsBunny, WAR</p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>5. RISK MANAGEMENT</span></p>
+
+<p class=doctext><span lang=EN-GB>Risks identified at the start of the project</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=2>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Risk 1</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of support from database architect and database
+  administrator of the customer</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Risk 2 </span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Improper use of RUP, as it is being used for the first time</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Risk 3</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Personnel attrition</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Risk 4 </span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Problems with working on customer's database over the link</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext>Risks encountered during the project</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=2>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Risk 1</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Impact of conversion to VAJ 3.0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Risk 2 </span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lack of support from database architect and database
+  administrator of the customer</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Risk 3</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Improper use of RUP, as it is being used for the first time </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Risk 4 </span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Personnel attrition </span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>Notes on Risk Mitigation</span></p>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>Risk1</span></span><span
+lang=EN-GB>: Clearly articulating the risk helped in customer agreeing to
+postpone the conversion with proper budgeting of its impact.</span></p>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>Risk2</span></span><span
+lang=EN-GB>: Mitigation strategies of careful and advance planning and
+employing the on-site coordinator were effective.</span></p>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>Risk3</span></span><span
+lang=EN-GB>: Training the team in RUP was effective. So was keeping the
+customer informed.</span></p>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>Risk 4</span></span><span
+lang=EN-GB>: Remained as a risk, although it did not materialize. Impact would
+have been minimal because multiple people were kept informed of each critical
+activity.</span></p>
+
+<p class=doctext><span class=docemphstrong1>6. SIZE</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=3>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Estimated</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Actual</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Number of simple use cases</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Number of medium use cases</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>9</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>9</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Number of complex use cases</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>12</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>12</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>Notes on Estimation</span></p>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>Classification
+Criteria</span></span><span lang=EN-GB>. The standard definition of simple,
+medium, and complex was used for classifying the use cases. This worked fine.</span></p>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>Final System Size
+in FP</span></span></p>
+
+<p class=doctext><span lang=EN-GB>The size of the final source is measured in
+LOC. It is normalized to FP by using the published conversion tables. For Java,
+the published tables suggest that 21 LOC equals 1 FP and for COBOL, 107 LOC equal
+1 FP.</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=3>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Output Language</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Size in LOC</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Size in FP</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Java</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>33,865</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1612</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>COBOL</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1241</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>12</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>7. SCHEDULE</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=5>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Phase</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext align=center style='text-align:center'><span
+  class=docemphstrong1>Actual Elapsed</span></p>
+  <p class=doctext align=center style='text-align:center'><span
+  class=docemphstrong1>Time (days)</span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Estimated Time (days)</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>% Slippage</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Reasons for Slippage</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Requirements</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>28.67</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>31</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–6.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>High-level design</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Detailed design</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>38.8</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>42</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–6.7</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Coding</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>132</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>135</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–1.6</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Unit testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>9</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–9.3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total - Build </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>141</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>144</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–2.1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Integration test</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>40</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>40</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>System testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>15</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Acceptance testing </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>30</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>200.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>AT completion was extended on customer's request.</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>8. EFFORT</span></span></p>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>Distribution over
+Life-Cycle Stages</span></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=5>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Stage</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Task</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Review</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Rework</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Total</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Requirements</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>210.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>60.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>280.0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>High-level design</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Detailed design</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>652.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>14.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>29.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>695.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Coding</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1188.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>39.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>76.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1304.0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Unit testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>129.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>17.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>146.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Integration testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>567.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>160.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>734.0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>System testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>90.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>90.0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Acceptance testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>336.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>336.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total - LC stages</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3173.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>69.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>343.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3586.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Project management </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>733.1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>733.1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Training</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>104.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>104.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>CM</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>317.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>317.0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Misc.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>488.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>488.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total – mgmt, training, and misc.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1643.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1643.0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total Effort (Person-hours)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>4816.50</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>69.50</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>343.50</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5229.50</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total Effort (Person-months)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>25.76</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.37</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1.84</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=right style='text-align:right'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>27.97</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>Cost of Quality</span></p>
+
+<p class=doctext><img width=500 height=91 src="080_files/image001.gif"
+alt="graphics/12equ01.gif" border=0></p>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>Effort
+Distribution and Actual Versus Estimated</span></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=7>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span lang=EN-GB style='font-size:10.5pt;font-family:
+  Arial;color:black'>&nbsp;</span></b></p>
+  </td>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Actual</span></span></p>
+  </td>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Estimated</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Stage</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Effort (person-hours)</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>%</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Effort (person-hours)</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>%</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>% Deviation</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Reasons or Deviation</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Requirements</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>280</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5.35</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>475.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–30</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Overestimated this effort (data from earlier project did not
+  help because it did not have this phase).</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Design (HLD and detailed)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>695.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>13.30</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>569.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>12</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>22</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Design took more time because team was inexperienced with
+  Rational Rose and OOAD.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Coding</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1304.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>24.94</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1235.3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>26</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Unit testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>146.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2.80</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>142.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Integration testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>734.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>14.04</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>331.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>7</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>120</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Much effort spent on fixing bugs introduced during
+  reconciliation with Synergy and Window Resized code. </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>System testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>90.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1.72</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>95.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Acceptance testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>336.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6.43</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>285.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>18</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Acceptance testing was not completed on Nov 3 and was extended
+  until Nov 23 due to delays from the customer.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total—LC stages</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3586.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>68.58</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3132.8</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>66</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>14.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Project management </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>733.1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>14.02</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>713.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>15</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Training</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>104.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2.00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>455.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–77</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>CM</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>317.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6.06</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>142.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>123</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Deviation due to reconciliation issues.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Misc.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>488.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>9.34</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>285.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>71</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>More because of training.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total—mgmt, training, and misc.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1643.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>31.42</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1595.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>34</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3.01</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5229.5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>100</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>4727.8</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>100</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10.6</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>9. DEFECTS</span></p>
+
+<p class=doctext><span class=docemphstrong1>Defect Distribution</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=6>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Stage Detected</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Actual Number of Defects</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>% of Total Defects Found</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Estimated Number of Defects</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>% of Total Estimated Defects</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>% Deviation</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Req. and design review</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>11</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>29</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>20</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–62</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Code review </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>58</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>50</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>29</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>20</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>100</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Unit testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>15</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>13</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>57</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>40</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–73</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Integration and system testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>29</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>25</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>25</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>17</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>16</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Acceptance testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–40</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>116</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>100</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>145</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>100</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–20</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>Reasons for Deviation</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Defect prevention reduced the defect injection
+rate in later stages, resulting in overall reduction in the defect injection
+rate.</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>In the earlier project from which the estimates
+were derived, fewer code reviews were done and there was a heavier reliance on
+UT. In this project, because code reviews were done more rigorously and widely,
+more defects were found in reviews, leading to a substantial decrease in the
+defects found in unit testing.</span></p>
+
+<p class=doctext><span class=docemphstrong1>Defect Removal Efficiencies</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=5>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Defects Detection Stage</span></span></p>
+  </td>
+  <td colspan=3 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Defects Injection Stage</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Defect Removal Efficiency</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Req.</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Build</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Design</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Req. review</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>100%</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Design review</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>100%</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Code review</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>58</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>55% ( 58 / 58 + 15 + 29 + 3 )</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Unit testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>15</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>32% (15 / 15 + 29 + 3)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Integration/system testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>29</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>91% ( 29 / 29 + 3)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Acceptance testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>100%</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>Overall Defect Removal Efficiency =
+113 / 116 = 97.4 %</span></p>
+
+<p class=doctext><span class=docemphstrong1>Distribution by Severity</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=4>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Sequence Number</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Severity</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Number of Defects</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>% of Total Defects</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Cosmetic</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>26</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>22.4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Minor</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>51</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>44</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Major</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>36</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>31</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>4</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Critical</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2.6</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Others</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>—</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>—</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Total</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>116</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>Distribution by Defect Type</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <COLGROUP span=4>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Sequence Number</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Defect Type</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Number of Defects</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>% of Total Defects</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Logic</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>33</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>28.4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Standards</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>29</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>25</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Performance</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>24</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>20.7</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>4.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Redundant code</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>14</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>12</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>User interface</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>9</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>7.7</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Architecture</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>4</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>7.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Consistency</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1.7</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>8.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Reusability</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.9</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Total</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>365</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span class=docemphstrong1>10. CAUSAL ANALYSIS AND LESSONS
+LEARNED</span></p>
+
+<p class=doctext><span lang=EN-GB>There were very few large deviations in the
+process performance; the actual performance was close to what was expected. The
+reasons for the deviations, where they are large, are given along with the
+deviation. </span>Some key lessons learned are:</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Incremental or phased development is extremely
+helpful in achieving higher quality and productivity because data from the
+first phase can be used to improve the remaining phases through defect
+prevention.</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Defect prevention can substantially reduce the
+defect injection rate. In terms of effort also, defect prevention pays off
+handsomely; by putting in a few hours of effort, up to 5 to 10 times effort
+savings can be achieved in the form of reduced rework effort.</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>If a change request has a major impact,
+discussion with the customer using a detailed impact analysis can be very helpful
+in setting the right expectations and doing a proper cost-benefit analysis
+(which may result in postponement of the change, as happened in this project).</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>The defect removal efficiencies of code reviews
+and unit testing are very low. Processes for both, and implementation of these
+processes, need to be reviewed to improve these numbers. In this project, the
+system/integration testing compensated for the poor performance of reviews and
+unit testing. However, for larger projects, this may not be possible and poor
+performance in reviews and unit testing can have adverse effects on quality.</span></p>
+
+<p class=doctext><span class=docemphstrong1><span lang=EN-GB>11. PROCESS ASSETS
+SUBMITTED</span></span></p>
+
+<p class=doctext><span lang=EN-GB>Project management plan, project schedule,
+configuration management plan, Java coding standards, code review checklist,
+integration plan review checklist, impact analysis checklist, causal analysis
+reports for defect prevention.</span></p>
+
+<p class=doctext><span class=docemphstrong1>12. REFERENCES</span></p>
+
+<p class=doctext>Omitted.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

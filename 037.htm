@@ -1,0 +1,238 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>6.1 CONCEPTS OF RISKS AND RISK MANAGEMENT</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>6.1 CONCEPTS OF
+RISKS AND RISK MANAGEMENT</span></h3>
+
+<p class=doctext><span class=docemphasis1><span lang=EN-GB>Risks</span></span><span
+lang=EN-GB> are those events or conditions that <span class=docemphasis1>may</span>
+occur, and whose occurrence, if it does take place, has a harmful or negative
+effect on a project. Risks should not be confused with events and conditions
+that require management intervention or action. A project manager must deal
+with and plan for those situations that are likely to occur but whose exact
+nature is not known beforehand; such situations, however, are not risks. For
+example, it is almost certain that defects will be found during software
+testing, so a reasonable project must plan to fix these defects when they are
+found. Similarly, it is almost certain that some change requests will come, so
+project management must be prepared for changes and plan accordingly to handle
+such normal events.</span></p>
+
+<p class=doctext><span lang=EN-GB>A risk, on the other hand, is a probabilistic
+event—it may or may not occur. For this reason, we frequently have an
+optimistic tendency to simply not see risks or to wish that they will not
+occur. Social and organizational factors also may stigmatize risks and
+discourage clear identification of them.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch06lev1sec6#ch06entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><span lang=EN-GB> This kind
+of attitude gets the project in trouble if the risk events materialize,
+something that is likely to happen in a large project. Not surprisingly, then,
+risk management is considered first among the best practices for managing large
+software projects.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch06lev1sec6#ch06entry02"><sup><span
+lang=EN-GB style='color:#003399'>2</span></sup></a></p>
+
+<p class=doctext><span lang=EN-GB>Risk management aims to identify the risks
+and then take actions to minimize their effect on the project. Risk management
+is a relatively new area in software management. It first came to the forefront
+with Boehm's tutorial on risk management.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch06lev1sec6#ch06entry03"><sup><span
+lang=EN-GB style='color:#003399'>3</span></sup></a><span lang=EN-GB> Since
+then, several books have targeted risk management for software.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch06lev1sec6#ch06entry04"><sup><span
+lang=EN-GB style='color:#003399'>4</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch06lev1sec6#ch06entry05"><sup><span
+lang=EN-GB style='color:#003399'>5</span></sup></a></p>
+
+<p class=doctext><span lang=EN-GB>Before we discuss risks in the software
+context, let's examine the concept a bit more with the aid of an example. Consider
+a computer show for which an important goal is to provide uninterrupted
+computer services. For this goal, one clear risk is electric power failure. The
+power may or may not fail. If it does fail, even for a second, the computer
+services will be affected substantially (the machines will have to reboot, data
+will be lost, and so on). If this case is unacceptable (that is, if the cost of
+the power failure is high), a universal power supply (UPS) can be deployed to
+minimize its consequences. If it is suspected that the power may go out for a
+long period, a backup generator may be set up to minimize the problem. With
+these risk management systems in place, if the power does go out, even for a
+long period, the show-related goal will not be compromised.</span></p>
+
+<p class=doctext><span lang=EN-GB>The first thing to note from this example is
+that risk management entails <span class=docemphasis1>additional cost.</span> Here,
+the cost for the UPS and the generator is extra because these components would
+not be needed if the risk of power failure did not exist (for example, if the
+electric supply company guaranteed continuous power). Hence, risk management
+can be considered cost-effective only if the cost of risk management is
+considerably less than the loss incurred if the risk materializes.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch06lev1sec6#ch06entry05"><sup><span
+lang=EN-GB style='color:#003399'>5</span></sup></a><span lang=EN-GB> (Actually,
+the cost of risk management should be less than the <span class=docemphasis1>expected
+value</span> of the loss, a concept defined shortly.) For example, if the loss
+due to power failure is low, the cost of a UPS is not justified—a situation
+that prevails, for example, in homes.</span></p>
+
+<p class=doctext><span lang=EN-GB>Second, it is not easy to measure the value
+of risk management, particularly in hindsight. If the power fails for one-half
+hour during the show, the value provided by the UPS and generator might be
+calculated as the &quot;savings&quot; achieved by having the computers running
+while the power was out. Suppose, however, that the power supply does not fail
+even for a second and therefore the UPS and generator are not used. Does this
+mean that the expenditure on these components was a waste? No, because the
+power <span class=docemphasis1>could have</span> failed. If the risk does not
+materialize, the value of using risk management cannot be directly measured in
+terms of value or output produced. Because risk events likely occur infrequently,
+the chances are high that risk management systems will not be used during the
+project. It is this probabilistic nature of risks and the inability to always
+realize the direct value of risk mitigation efforts that make it difficult to
+manage risk.</span></p>
+
+<p class=doctext><span lang=EN-GB>From this example, it is clear that the first
+step in risk management is to identify the possible risks (power failure in
+this example) and to assess the consequences (loss of face or clients). Once
+you have done risk assessment, you can develop a risk management plan (for
+example, having a UPS). Overall, then, risk management has two key components:
+risk assessment and risk control. Each component involves different tasks, as
+shown in </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch06lev1sec1&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch06fig01#ch06fig01"><span
+lang=EN-GB style='color:#003399'>Figure 6.1</span></a><span lang=EN-GB>.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch06lev1sec6#ch06entry03"><sup><span
+lang=EN-GB style='color:#003399'>3</span></sup></a></p>
+
+<h5 align=center style='text-align:center'><a name=ch06fig01></a><span
+lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Figure 6.1. </span><span
+style='font-size:10.5pt;font-family:Arial'>Risk management activities</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=219 src="037_files/image001.gif" alt="graphics/06fig01.gif"></p>
+
+<p class=doctext><span lang=EN-GB>The purpose of the risk assessment task is to
+identify the risks, analyze them, and then prioritize them. In prioritizing
+risks, you identify the risks that should be managed. In other words,
+prioritization determines where the extra effort of risk management should be
+spent to get the maximum benefit. For this effort, two factors are important.
+First is the chance of a risk occurring; a more likely risk is a natural
+candidate for risk management. Second is the effect of the risk; a risk whose
+impact is very high is also a likely candidate.</span></p>
+
+<p class=doctext><span lang=EN-GB>One way to prioritize risks, therefore, is to
+estimate the probability of its occurrence and its consequences when it does
+occur. The product of these values, the <span class=docemphasis1>expected value</span>
+of the loss for the risk, can be used for prioritization. This expected value
+is called <span class=docemphasis1>risk exposure</span>. If Prob(R) is the
+probability of a risk R occurring and if Loss(R) is the total loss incurred if
+the risk materializes, then risk exposure, RE, for the risk is given by the
+following equation</span><a
+href="http:// /?xmlid=0-201-73721-3/ch06lev1sec6#ch06entry03"><sup><span
+lang=EN-GB style='color:#003399'>3</span></sup></a><span lang=EN-GB>:</span></p>
+
+<p class=doclist><span lang=EN-GB>RE (R) = Prob(R) x Loss(R)</span></p>
+
+<p class=doctext><span lang=EN-GB>Once the risks have been prioritized, you
+must decide what to do about them. Which ones will be managed is a management
+decision. Perhaps only the top few need to be handled in a project.</span></p>
+
+<p class=doctext><span lang=EN-GB>One approach is to take preventive or
+avoidance actions so that the perceived risk ceases to be a risk. For example,
+if new hardware is a risk, it could be avoided by implementing the project with
+proven hardware. Such actions, however, are not always feasible—for example, if
+working with new hardware is a requirement from the customer. In such
+situations, the risks to the project must be handled properly.</span></p>
+
+<p class=doctext><span lang=EN-GB>For each risk that will be handled, you must
+devise and then execute risk management plans. Because risk perception changes
+with time, you must also monitor both the risk and the execution of the plans
+to minimize its consequences. In a project, risk perceptions may evolve
+naturally, or the risk management plans put into action may reduce the risk. In
+either case, it is important to continually gauge the status of risks and their
+management plans.</span></p>
+
+<p class=doctext><span lang=EN-GB>Risk management can be integrated in the
+development process itself, as is done in the spiral model of software
+development.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch06lev1sec6#ch06entry06"><sup><span
+lang=EN-GB style='color:#003399'>6</span></sup></a><span lang=EN-GB> If you
+treat risk management as a separate process, you must understand its
+relationship with project execution, depicted in </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch06lev1sec1&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch06fig02#ch06fig02"><span
+lang=EN-GB style='color:#003399'>Figure 6.2</span></a><span lang=EN-GB>. As
+shown in the figure, risk assessment and monitoring take information from project
+execution, along with other factors, to identify risks to be managed. The risk
+management activities, on the other hand, affect the project's process for
+minimizing the consequences of the risk.</span></p>
+
+<h5 align=center style='text-align:center'><a name=ch06fig02></a><span
+lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Figure 6.2. Risk
+management and project execution</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=207 src="037_files/image002.gif" alt="graphics/06fig02.gif"></p>
+
+<p class=doctext><span lang=EN-GB>The remainder of this chapter describes how
+project managers at Infosys manage risks using simple, effective techniques. The
+activities for risk management are combined into two tasks: risk assessment and
+risk control. </span>We discuss each separately.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

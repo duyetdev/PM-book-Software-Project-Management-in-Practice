@@ -1,0 +1,329 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>7.1 CONCEPTS IN MEASUREMENT</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>7.1 CONCEPTS IN
+MEASUREMENT</span></h3>
+
+<p class=doctext><span lang=EN-GB>The basic purpose of measurements in a
+project is to effectively control the project. This section discusses some
+concepts related to metrics and measurement and the basic metrics that you
+should measure for controlling a project. One approach for process control is
+statistical process control. This section also discusses some concepts relating
+to SPC and the way SPC can be used for software.</span></p>
+
+<h4><a name=ch07lev2sec1></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>7.1.1 Metrics and Measurements</span></h4>
+
+<p class=doctext><span lang=EN-GB>Software metrics can be used to quantitatively
+characterize various aspects of the software process or software products. <span
+class=docemphasis1>Process metrics</span> quantify attributes of the software
+process or the development environment, whereas <span class=docemphasis1>product
+metrics</span> are measures for the software products.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry02"><sup><span
+lang=EN-GB style='color:#003399'>2</span></sup></a><span lang=EN-GB> Product
+metrics remain independent of the process used to produce the product. Examples
+of process metrics include productivity, quality, resource metrics, defect
+injection rate, and defect removal efficiency. Examples of product metrics
+include size, reliability, quality (quality can be viewed as a product metric
+as well as a process metric), complexity of the code, and functionality.</span></p>
+
+<p class=doctext><span lang=EN-GB>The use of metrics necessarily requires that
+measurements be made to obtain data. For any metrics program, you must clearly
+understand the goals for collecting data as well as the models that are used
+for making judgments based on the data. In general, which metrics to use and
+which measurements to take will depend on the project and organization goals;
+you can use a framework, such as the goal-question-metric paradigm, to
+determine the metrics that need to be measured.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry03"><sup><span
+lang=EN-GB style='color:#003399'>3</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry04"><sup><span
+lang=EN-GB style='color:#003399'>4</span></sup></a><span lang=EN-GB> In practice,
+however, a few metrics suffice for most situations, and special metrics are
+needed only for special situations. Schedule, size, effort, and defects are the
+basic measurements for projects and form a stable metrics set.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry05"><sup><span
+lang=EN-GB style='color:#003399'>5</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry06"><sup><span
+lang=EN-GB style='color:#003399'>6</span></sup></a></p>
+
+<p class=doctext><span lang=EN-GB>Schedule is one of the most important metrics
+because most projects are driven by schedules and deadlines. It is, however,
+the easiest to measure because calendar time is usually used. Effort is the
+main resource consumed in a software project. Consequently, tracking of effort
+is a key activity during monitoring; it is essential for evaluating whether the
+project is executing within budget. That is, this data is needed to make
+statements such as &quot;The cost of the project is likely to be about 30% more
+than projected earlier&quot; or &quot;The project is likely to finish within
+budget.&quot;</span></p>
+
+<p class=doctext><span lang=EN-GB>Because defects have a direct relationship to
+software quality, tracking of defects is critical for ensuring quality. A large
+software project may include thousands of defects that are found by different
+people at different stages. Often the person who fixes a defect is not the same
+person who finds or reports it. Generally, a project manager will want to
+remove most or all of the defects found before the final delivery of the
+software. In such a scenario, defect reporting and closure cannot be done
+informally. The use of informal mechanisms may lead to defects being found but
+later forgotten, so defects end up not being removed or extra effort must be
+spent in finding the defect again. Hence, at the very least, defects must be
+logged and their closure tracked. For this procedure, you need information,
+such as the manifestation of the defect, its location, and the names of the
+person who found it and the person who closed it. Once each defect found is
+logged (and later closed), analysis can focus on how many defects have been
+found so far, what percentage of defects are still open, and other issues. Defect
+tracking is considered one of the best practices for managing a project.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry07"><sup><span
+lang=EN-GB style='color:#003399'>7</span></sup></a></p>
+
+<p class=doctext><span lang=EN-GB>Merely logging defects and tracking them is
+not sufficient to support other desirable analyses. To understand what
+percentage of defects are caught where, you also need to record information
+about the phases at which defects are detected. To understand the defect removal
+efficiency of various quality control tasks and thereby improve their
+performance, you must know not only where a defect is detected but also where
+it was injected. In other words, for each defect logged, you should also
+provide information about the phase in which the defect was introduced.</span></p>
+
+<p class=doctext><span lang=EN-GB>Size is another fundamental metric because
+many data (for example, delivered defect density) are normalized with respect
+to size. Without size data, you cannot predict performance using past data. Also,
+without normalization with respect to a standard measure of size, you cannot
+benchmark performance for comparison purposes. The two common measures for size
+are lines of code (LOC) and function points. If you use lines of code as a
+measure, productivity differs with the programming language. Function points
+provide uniformity.</span></p>
+
+<h4><a name=ch07lev2sec2></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>7.1.2 Process Monitoring through Statistical Process Control</span></h4>
+
+<p class=doctext><span lang=EN-GB>Statistical process control has been used
+with great success in manufacturing, and its use in software is also
+increasing.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry08"><sup><span
+lang=EN-GB style='color:#003399'>8</span></sup></a><span lang=EN-GB> Here we
+briefly discuss some general concepts of SPC; for more information, you can
+consult any textbook on statistical quality control.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry09"><sup><span
+lang=EN-GB style='color:#003399'>9</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry10"><sup><span
+lang=EN-GB style='color:#003399'>10</span></sup></a><span lang=EN-GB> In </span><a
+href="http:// /?xmlid=0-201-73721-3/ch10#ch10"><span
+lang=EN-GB style='color:#003399'>Chapters 10</span></a><span lang=EN-GB> and </span><a
+href="http:// /?xmlid=0-201-73721-3/ch11#ch11"><span
+lang=EN-GB style='color:#003399'>11</span></a><span lang=EN-GB> you will see
+how SPC concepts are used for project monitoring.</span></p>
+
+<p class=doctext><span lang=EN-GB>A <span class=docemphasis1>process</span> is
+used to produce output, and the quality of the output can be defined in terms
+of certain quality <span class=docemphasis1>characteristics.</span> A number of
+factors affect the variability in the value of these characteristics. These
+factors can be classified into two categories: natural (or inherent) causes of
+variability, and assignable (or special) causes. Natural causes are those that
+are always present and each of which contributes to the variability. It's not
+practical to control these causes unless the process itself is changed. Assignable
+causes, on the other hand, are those that occur once in a while, have a larger
+influence over variability in the process performance, and can be controlled. </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch07lev1sec1&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch07fig01#ch07fig01"><span
+lang=EN-GB style='color:#003399'>Figure 7.1</span></a><span lang=EN-GB>
+illustrates the relationship between causes and quality characteristics.</span></p>
+
+<h5 align=center style='text-align:center'><a name=ch07fig01></a><span
+lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Figure 7.1. </span><span
+style='font-size:10.5pt;font-family:Arial'>Assignable and natural causes</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=427 height=140 src="044_files/image001.gif" alt="graphics/07fig01.gif"></p>
+
+<p class=doctext><span lang=EN-GB>A process is said to be under <span
+class=docemphasis1>statistical control</span> if the variability in the quality
+characteristics is due to natural causes only. The goal of SPC is to keep the
+production process in statistical control.</span></p>
+
+<p class=doctext><span lang=EN-GB>C<span class=docemphasis1>ontrol charts</span>
+are a favorite tool for applying SPC. To build a control chart, the output of a
+process is considered to be a stream of numeric values representing the values
+of the characteristic of interest. Subgroups of data are taken from this
+stream, and the mean values for the subgroups are plotted, giving an X-bar
+chart. A <span class=docemphasis1>lower control limit</span> (LCL) and an <span
+class=docemphasis1>upper control limit</span> (UCL) are established. If a point
+falls outside the control limits, the large variability is considered to be due
+to assignable causes. Another chart, called an R-chart, plots the range (the
+difference between the minimum and maximum values) of the chosen subgroups. Control
+limits are established for the R-chart, and a point falling outside these
+control limits is also considered as having assignable causes.</span></p>
+
+<p class=doctext><span lang=EN-GB>By convention, LCL and UCL are frequently set
+at 3-sigma around the mean, where sigma is the standard deviation for data with
+only normal variability (that is, variability due to natural causes). With
+these limits, the probability of a <span class=docemphasis1>false alarm—</span>in
+which a point with natural variability falls outside the limits—is only 0.27%.</span></p>
+
+<p class=doctext><span lang=EN-GB>When the production process does not yield
+the same item repeatedly, as is the case with software processes, forming
+subgroups may not make sense; individual values are therefore considered. </span>For
+such processes, XMR charts<a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry09"><sup><span
+style='color:#003399'>9</span></sup></a><sup>,</sup><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry10"><sup><span
+style='color:#003399'>10</span></sup></a> can be used. In an XMR chart, a
+moving range of two consecutive values is considered as the range for the
+R-chart. For the X-bar chart, the individual values are plotted; the control
+limits are then determined using the average moving range.</p>
+
+<p class=doctext>Note that control limits are different from specification
+limits. <span class=docemphasis1>Specification limits</span> specify, based on
+the requirements, the performance that is desired from the process. Control
+limits, on the other hand, based on actual data from the process, determine the
+actual performance capability of the process—that is, what the process actually
+is capable of delivering. Clearly, if the control limits are within the
+specification limits (the specification limits are wider than the control
+limits), the process is capable of delivering output that will meet the
+specifications most of the time. On the other hand, if the specification limit
+is within the control limits, the probability of the process producing an
+outcome that does not satisfy the requirements increases. Based on the relationship
+between the specification limit and the control limit, the capability of a
+process can be defined formally.<a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry09"><sup><span
+style='color:#003399'>9</span></sup></a><sup>,</sup><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry10"><sup><span
+style='color:#003399'>10</span></sup></a></p>
+
+<p class=doctext>You use the control charts to continuously monitor the
+performance of the process and identify an out-of-control situation.
+Separately, you decide what action will be taken when a point representing an
+output falls outside the control limit. Generally, two types of actions are
+performed:</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Rework the output so that it has acceptable characteristics—that
+is, take corrective action.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Conduct further analysis to identify the assignable causes and
+eliminate them from the process—that is, take preventive actions.</p>
+
+<p class=doctext>To employ control charts for software processes, you must
+first identify the processes to which SPC can be applied. One choice is the
+overall process, whose output is the software product to be delivered. The
+characteristics that can be studied for the output of this process include
+productivity, delivered defect density, and defect injection rate, among
+others. You can obtain the values of most of these characteristics for the
+output of the overall process only after the project ends, so SPC for the
+overall process has limited value for project monitoring and control. Its value
+lies primarily in understanding and improving the capability of the process.</p>
+
+<p class=doctext>To control a project, you can deploy SPC for &quot;mini-processes&quot;
+that are executed during the course of the project, such as the review process
+or testing process. Under SPC, as soon as the process is executed, its results
+can be analyzed. If required, you can then apply control in the form of
+corrective or preventive actions. Through corrective actions, the out-of-limit
+output is made acceptable; preventive actions help to improve execution of the
+remainder of the project. <a
+href="http:// /?xmlid=0-201-73721-3/ch10#ch10"><span
+style='color:#003399'>Chapters 10</span></a> and <a
+href="http:// /?xmlid=0-201-73721-3/ch11#ch11"><span
+style='color:#003399'>11</span></a> discuss the use of SPC for monitoring
+projects.</p>
+
+<p class=doctext>Given the possibility of a large variation in performance in
+software processes, it is not an easy task to identify points having only
+natural variability so that you can determine the control limits. Hence, to
+compute the control limits from past performance data, you must use your
+judgment to determine which data points should be excluded. Furthermore, past
+data should not be used blindly, and discerning management must always support
+its use. For example, you cannot assume that a process has failed just because
+the performance is out of the range computed from past data.<a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry02"><sup><span
+style='color:#003399'>2</span></sup></a><sup>,</sup><a
+href="http:// /?xmlid=0-201-73721-3/ch07lev1sec6#ch07entry11"><sup><span
+style='color:#003399'>11</span></sup></a> A more suitable approach is to use
+the performance range to draw attention to a deviation and then analyze the
+reasons for the deviation.</p>
+
+<p class=MsoNormal><span style='color:black'><a
+href="http:// /?xmlid=0-201-73721-3/26961533"><span
+style='text-decoration:none'><img border=0 width=1 height=1
+src="044_files/image002.gif"></span></a></span></p>
+
+</div>
+
+</body>
+
+</html>

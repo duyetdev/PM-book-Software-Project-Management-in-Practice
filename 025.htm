@@ -1,0 +1,1869 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>4.2 EFFORT ESTIMATION</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;
+	font-weight:bold;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;
+	font-weight:bold;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+span.docemphstrong1
+	{font-weight:bold;}
+span.docemphsmaller1
+	{color:#354278;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>4.2 EFFORT
+ESTIMATION</span></h3>
+
+<p class=doctext><span lang=EN-GB>At Infosys, estimation generally takes place
+after analysis. That is, when a project manager estimates the effort, the
+requirements are well understood. </span>The business processes are organized
+to support this approach. For example, the requirement phase is sometimes
+executed as a separate project from the software development project.</p>
+
+<p class=doctext>At Infosys, multiple estimation approaches have been proposed,
+some of which are discussed here. A project manager can choose any of the estimation
+approaches that suit the nature of the work. Sometimes, a project manager may
+estimate using multiple methods, either to validate the estimate from its
+primary method or to reduce the risks, particularly where past data of similar
+projects are limited.</p>
+
+<h4><a name=ch04lev2sec3></a><span style='font-size:13.0pt;font-family:Arial'>4.2.1
+The Bottom-up Estimation Approach</span></h4>
+
+<p class=doctext>Because the types of projects undertaken at Infosys vary
+substantially, the bottom-up approach is preferred and recommended. The company
+employs a task unit approach,<a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry01"><sup><span
+style='color:#003399'>1</span></sup></a> although some of the limitations of
+this strategy have been overcome through the use of past data and the process
+capability baseline (see <a
+href="http:// /?xmlid=0-201-73721-3/ch02#ch02"><span
+style='color:#003399'>Chapter 2</span></a>).</p>
+
+<p class=doctext>In the <span class=docemphasis1>task unit</span> approach, the
+project manager first divides the software under development into major
+programs (or units). Each program unit is then classified as simple, medium, or
+complex based on certain criteria. For each classification unit, the project
+manager defines a <span class=docemphasis1>standard</span> effort for coding
+and self-testing (together called the <span class=docemphasis1>build effort</span>).
+This standard build effort can be based on past data from a similar project,
+from the internal guidelines available, or some combination of these.</p>
+
+<p class=doctext>Once the number of units in the three categories of complexity
+is known and the estimated build effort for each program is selected, the total
+effort for the build phase of the project is known. From the build effort, the
+effort required for the other phases and activities is determined as a
+percentage of the coding effort. From the process capability baseline or the
+process database, the distribution of effort in a project is known. The project
+manager uses this distribution to determine the effort for other phases and
+activities. From these estimates, the total effort for the project is obtained.</p>
+
+<p class=doctext>This approach lends itself to a judicious mixture of
+experience and data. If suitable data are not available (for example, if you're
+launching a new type of project), you can estimate the build effort by
+experience after you analyze the project and when you know the various program
+units. With this estimate available, you can obtain the estimate for other
+activities by working with the effort distribution data obtained from past
+projects. This strategy even accounts for activities that are sometimes
+difficult to enumerate early but do consume effort; in the effort distribution
+for a project, the &quot;other&quot; category is frequently used to handle
+miscellaneous tasks.</p>
+
+<p class=doctext>The procedure for estimation can be summarized as the
+following sequence of steps:</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><a
+name=ch04pr01></a>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span value=1>Identify programs in the system and classify them as
+simple, medium, or complex (S/M/C). As much as possible, use either the
+provided standard definitions or definitions from past projects.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=2>If a project-specific baseline exists, get the average build effort for
+S/M/C programs from the baseline.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=3>If a project-specific baseline does not exist, use project type,
+technology, language, and other attributes to look for similar projects in the
+process database. Use data from these projects to define the build effort of
+S/M/C programs.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=4>If no similar project exists in the process database and no
+project-specific baseline exists, use the average build effort for S/M/C
+programs from the general process capability baseline.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=5>Use project-specific factors to refine the build effort for S/M/C
+programs.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=6>Get the total build effort using the build effort of S/M/C programs and
+the counts for them.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=7>Using the effort distribution given in the capability baseline or for
+similar projects given in the process database, estimate the effort for other
+tasks and the total effort.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=8>Refine the estimates based on project-specific factors.</p>
+
+</span>
+
+<p class=doctext>This procedure uses the process database and process
+capability baseline, which are discussed in <a
+href="http:// /?xmlid=0-201-73721-3/ch02#ch02"><span
+style='color:#003399'>Chapter 2</span></a>. As mentioned earlier, if many
+projects of a type are being executed, you can build a project-specific
+capability baseline. Such baselines are similar to the general baselines but
+use only data from specific projects. These baselines have been found to be the
+best for predicting effort for another project of that type. Hence, for
+estimation, their use is preferred.</p>
+
+<p class=doctext>Because many factors can affect the effort required for a
+project, it is essential that estimates account for project-specific factors.
+Instead of classifying parameters into different levels and then determining
+the effect on the effort requirement, the approach outlined here lets the
+project manager determine the impact of project-specific factors on the
+estimate. Project managers can make this adjustment using their experience, the
+experience of the team members, or data from projects found in the process
+database.</p>
+
+<p class=doctext>Note that this method of classifying programs into a few
+categories and using an average build effort for each category is followed for
+overall estimation. In detailed scheduling, however—in which a project manager
+assigns each unit to a member of the team for coding and budgets time for the
+activity—characteristics of a unit are taken into account to give more or less
+time than the average.</p>
+
+<h4><a name=ch04lev2sec4></a><span style='font-size:13.0pt;font-family:Arial'>4.2.2
+The Top-Down Estimation Approach</span></h4>
+
+<p class=doctext>Like any top-down approach, the Infosys approach starts with
+an estimate of the size of the software in function points. The function points
+can be counted using standard function point counting rules. Alternatively, if
+the size estimate is known in terms of LOC, it can be converted into function points.</p>
+
+<p class=doctext>In addition to the size estimate, a top-down approach requires
+an estimate of productivity. The basic approach is to start with productivity
+levels of similar projects (data for which is available in the process
+database) or with standard productivity figures (data for which is available in
+the process capability baseline), and then to adjust those levels, if needed,
+to suit the project. The productivity estimate is then used to calculate the
+overall effort estimate. From the overall effort estimate, estimates for the
+various phases are derived by using the percentage distributions. (These
+distributions, as in the bottom-up approach, are obtained from the process
+database or the capability baseline.)</p>
+
+<p class=doctext>To summarize, the overall approach for top-down estimation
+involves the following steps:</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><a
+name=ch04pr02></a>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span value=1>Get the estimate of the total size of the software in
+function points.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=2>Using the productivity data from the project-specific capability
+baseline, from the general process capability baseline, or from similar
+projects, fix the productivity level for the project.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=3>Obtain the overall effort estimate from the productivity and size
+estimates.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=4>Use effort distribution data from the process capability baselines or
+similar projects to estimate the effort for the various phases.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=5>Refine the estimates, taking project-specific factors into
+consideration.</p>
+
+</span>
+
+<p class=doctext>Like the bottom-up estimation, the top-down approach allows
+the estimates to be refined using project-specific factors. This allowance,
+without actually defining these factors, acknowledges that each project is
+unique and may have some characteristics that do not exist in other projects.
+It may not be possible to enumerate these characteristics or formally model
+their effects on productivity. Hence, it is left to the project manager to
+decide which factors should be considered and how they will affect the project.</p>
+
+<h4><a name=ch04lev2sec5></a><span style='font-size:13.0pt;font-family:Arial'>4.2.3
+The Use Case Points Approach</span></h4>
+
+<p class=doctext>The use case points approach employed at Infosys is based on
+the approach from Rational and is similar to the function points methods. This
+approach can be applied if use cases are used for requirement specification.
+The basic steps in this approach are as follows.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><a
+name=ch04pr03></a>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span value=1>Classify each use case as simple, medium, or complex. The
+basis of this classification is the number of transactions in a use case,
+including secondary scenarios. A <span class=docemphasis1>transaction</span> is
+defined to be an atomic set of activities that is either performed entirely or
+not at all. A simple use case has three or fewer transactions, an average use
+case has four to seven transactions, and a complex use case has more than seven
+transactions. A simple use case is assigned a factor of 5, a medium use case a
+factor of 10, and a complex use case a factor of 15. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04table01#ch04table01"><span
+style='color:#003399'>Table 4.1</span></a> gives this classification and
+factors.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=2>Obtain the total <span class=docemphasis1>unadjusted use case points</span>
+(UUCPs) as a weighted sum of factors for the use cases in the application. That
+is, for each of the three complexity classes, first obtain the product of the
+number of use cases of a particular complexity and the factor for that complexity.
+The sum of the three products is the number of UUCPs for the application.</p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=3>Adjust the raw UUCP to reflect the project's complexity and the
+experience of the people on the project. To do this, first compute the
+technical complexity factor (TCF) by reviewing the factors given in <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04table02#ch04table02"><span
+style='color:#003399'>Table 4.2</span></a> and rating each factor from 0 to 5.
+A rating of 0 means that the factor is irrelevant for this project; 5 means it
+is essential. For each factor, multiply its rating by its weight from the table
+and add these numbers to get the TFactor. Obtain the TCF using this equation:</p>
+
+<p class=doclist style='margin-left:36.0pt'>TCF = 0.6 + (0.01 * TFactor)</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="90%"
+ style='width:90.0%;margin-left:36.0pt'>
+ <tr>
+  <td colspan=3 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch04table01></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 4.1. Use Case Complexity and
+  Factors</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Use Case Type</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Description</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Factor</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Simple</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>3 or fewer transactions</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Medium</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>4–7 transactions</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Complex</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&gt;7 transactions</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>15</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt'><a name=ch04table02></a><span style='font-size:10.5pt;
+color:black;display:none'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="90%"
+ style='width:90.0%;margin-left:36.0pt'>
+ <tr>
+  <td colspan=3 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><span style='font-size:10.5pt;
+  font-family:Arial'>Table 4.2. Technical Factors and Weights</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Sequence Number</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Factor</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Weight</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Distributed system</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Response or throughput performance objectives</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>End-user efficiency (online)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>4</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Complex internal processing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Code must be reusable</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Easy to install</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>7</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Easy to use</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>8</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Portable</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>9</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Easy to change</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Concurrent</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>11</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Includes special security features</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>12</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Provides direct access for third parties</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>13</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Special user training facilities required</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=4>Similarly, compute the environment factor (EF) by going through <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04table03#ch04table03"><span
+style='color:#003399'>Table 4.3</span></a> and rating each factor from 0 to 5.
+For experience-related factors, 0 means no experience in the subject, 5 means
+expert, and 3 means average. For motivation, 0 means no motivation on the
+project, 5 means high motivation, and 3 means average. For the stability of
+requirements, 0 means extremely unstable requirements, 5 means unchanging
+requirements, and 3 means average. For part-time workers, 0 means no part-time
+technical staff, 5 means all part-time staff, and 3 means average. For
+programming language difficulty, 0 means easy-to-use programming language, 5
+means very difficult programming language, and 3 means average. The weighted
+sum gives the EFactor, from which the EF is obtained by the following equation:</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="90%"
+ style='width:90.0%;margin-left:36.0pt'>
+ <tr>
+  <td colspan=3 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch04table03></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 4.3. Environmental Factors
+  for Team and Weights</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Sequence Number</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Factor</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Weight</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Familiar with Internet process</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Application experience</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Object-oriented experience</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>4</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Lead analyst capability</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>0.5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Motivation</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Stable requirements</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>7</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Part-time workers</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>8</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Difficult programming language</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>–1</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>EF
+= 1.4 + (–0.03 * EFactor)</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'></span>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+value=5>Using these two factors, compute the final use case points (UCP) as
+follows:</p>
+
+<p class=doclist style='margin-left:36.0pt'>UCP = UUCP * TCF * EF</p>
+
+<p class=doctext></span>For effort estimation, assign, on an average, 20
+person-hours per UCP for the entire life cycle. This will give a rough
+estimate. Refine this further as follows. Count how many factors are less than
+3 and how many factors are greater than 3. If the total number of factors that
+have a value less than 3 are few, 20 person-hours per UCP is suitable. If there
+are many, use 28 person-hours per UCP. In other words, the range is 20 to 28
+person-hours per UCP, and the project manager can decide which value to use depending
+on the various factors.</p>
+
+<h4><a name=ch04lev2sec6></a><span style='font-size:13.0pt;font-family:Arial'>4.2.4
+Effectiveness of the Overall Approach</span></h4>
+
+<p class=doctext>The common way to analyze the <span class=docemphasis1>effectiveness</span>
+of an estimation approach is to see how the estimated effort compares with the
+actual effort. As discussed earlier, this comparison gives only a general idea
+of the accuracy of the estimates; it does not indicate how optimal the
+estimates are. To gain that information, you must study the effects of
+estimates on programmers (for example, whether they were &quot;stretched&quot;
+or were &quot;underutilized&quot;). Nevertheless, a comparison of actual effort
+expended and estimated effort does give an idea of the effectiveness of the
+estimation method.</p>
+
+<p class=doctext>For completed projects, as discussed in <a
+href="http:// /?xmlid=0-201-73721-3/ch03#ch03"><span
+style='color:#003399'>Chapter 3</span></a>, the process database includes
+information on the estimated effort as well as the actual effort. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04fig01#ch04fig01"><span
+style='color:#003399'>Figure 4.1</span></a> shows the scatter plot of estimated
+effort and actual effort for some of the completed development projects.</p>
+
+<h5 align=center style='text-align:center'><a name=ch04fig01></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 4.1. Actual versus estimated
+effort</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=236 src="025_files/image001.gif" alt="graphics/04fig01.gif"></p>
+
+<p class=doctext>As the plot shows, the estimation approach works quite well;
+most of the data points are close to the 45-degree line in the graph (if all
+estimates match the actual effort, all points will fall on the 45-degree line).
+The data also show that more than 50% of the projects are within 25% of the
+estimated effort. Nevertheless, the data indicate that the estimates are
+usually lower than the actual effort; note that most of the points are above
+the 45-degree line rather than below it. That is, people tend to underestimate
+more often—something that afflicts the software industry in general. On
+average, the actual effort was 25% higher than the estimate. Overall, although
+there is room for improvement, the estimation approach is reasonably effective.</p>
+
+<h4><a name=ch04lev2sec7></a><span style='font-size:13.0pt;font-family:Arial'>4.2.5
+Effort Estimate of the ACIC Project</span></h4>
+
+<p class=doctext>Here we illustrate the estimation approach by showing its
+application on the ACIC project. Two other examples can be found in my earlier
+book.<a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry10"><sup><span
+style='color:#003399'>10</span></sup></a> The ACIC project employs the
+use-case-driven approach. Hence, the main decomposition is in terms of use
+cases and not in terms of modules. To classify the use cases, the project
+manager used the classification criteria. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04table04#ch04table04"><span
+style='color:#003399'>Table 4.4</span></a> lists the 26 use cases along with
+their complexity.</p>
+
+<p class=doctext>To estimate the build effort for different types of use cases,
+the ACIC project manager used the data from the Synergy project, whose process
+database entry is given in <a
+href="http:// /?xmlid=0-201-73721-3/ch03#ch03"><span
+style='color:#003399'>Chapter 3</span></a>. The Synergy project had 21 simple,
+11 medium, and 8 complex use cases. The detailed build data for the different
+use cases was used to estimate the average build efforts. (The total build
+effort was about 143 person-days. With average build efforts of 1 person-day, 5
+person-days, and 8 person-days, respectively, for average, medium, and complex
+use cases, the total comes to 140, a number that is reasonably close to
+actual.) <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04table05#ch04table05"><span
+style='color:#003399'>Table 4.5</span></a> shows the average build effort for
+each type of use case and the total build effort.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=3 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch04table04></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 4.4. Use Cases in the ACIC
+  Project</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Use Case Number</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Description</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Complexity</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Navigate Screen</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Update Personal Details</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Medium</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Add Address</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Medium</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>4</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Update Address</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Delete Address</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Add Telephone Number</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Medium</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>7</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Update Telephone Number</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>8</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Delete Telephone Number</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>9</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Add E-mail</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Medium</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Update E-mail</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Medium</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>11</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Delete E-mail</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Medium</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>12</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Update Employment Details of a Party</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Medium</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>13</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Update Financial Details of a Party</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Medium</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>14</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Update Details of an Account</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Medium</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>15</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Maintain Activities of an Account</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>16</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Maintain Memos of an Account</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Simple</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>17</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>View History of Party Details</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>18</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>View History of Account Details</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>19</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>View History of Option Level and Service Options</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Simple</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>20</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>View History of Activities and Memos</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Simple</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>21</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>View History of Roles</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>22</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>View Account Details</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Simple</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>23</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>View Holdings of an Account</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>24</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>View Pending Orders of an Account</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>25</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Close/Reactivate Account</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Simple</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>26</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Make Intelligent Update to Business Partners of ACIC</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>Complex</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext>To estimate the effort distribution among the stages, the
+project manager used the distribution found in the Synergy project. Because the
+earlier project did not have a requirements phase, the distribution had to be
+modified. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04table06#ch04table06"><span
+style='color:#003399'>Table 4.6</span></a> gives the estimate for each phase
+and for the total.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=4 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch04table05></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 4.5. Build Effort for the
+  ACIC Project</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Use Case Type</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Effort (per use case, in person-days)</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Number of Units</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total Build Effort (person-days)</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Simple use cases</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Medium use cases</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>9</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>45</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Complex use cases</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>8</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>12</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>96</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphsmaller1><span style='font-size:7.5pt;
+  font-family:Arial'>T</span></span><span style='font-size:10.5pt;font-family:
+  Arial;color:black'>otal</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>146</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext>In this project, in addition to estimating in this bottom-up
+manner, the project manager employed the use case point methodology. As described
+earlier, first the UUCPs are determined from the use cases by assigning 5
+points to each simple use case, 10 points to each medium-complexity use case,
+and 15 to each complex use case. The number of simple, medium, and complex use
+cases were 5, 9, and 12, respectively, so this translates to</p>
+
+<p class=doclist>UUCP = 5 * 5 + 9 * 10 + 12 * 15 = 295</p>
+
+<p class=doctext>To take into account the various factors, first the ACIC
+project manager assigned weights to the factors related to the complexity of
+the technology and obtained the technology complexity factor. He chose the
+following values of the factors (in the order given in <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04table03#ch04table03"><span
+style='color:#003399'>Table 4.3</span></a>): 4, 3, 5, 3, 4, 5, 5, 0, 4, 1, 2,
+0, and 5, resulting in a TFactor of 40 (8 + 3 + 5 + 3 + 4 + 2.5 + 2.5 + 0 + 4 +
+1 + 2 + 0 + 5) and a TCF of 1.0. Next, he computed the environmental factor. He
+assigned the following weights to the environmental factors: 3, 1, 3, 4, 5, 5,
+0, and 3; the resulting EFactor was 22 (4.5 + 0.5 + 3 + 2 + 5 + 10 + 0 – 3) and
+an EF of 0.74. From these, he calculated the total use case points as</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=3 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch04table06></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 4.6. Estimated Effort for
+  the ACIC Project</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Activity</span></span></p>
+  </td>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Estimated Effort</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Person-days</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>% of Total Effort</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Requirements</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>50</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Design</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>60</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>12</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Build</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>146</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>29</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Integration testing </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>35</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>7</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Regression testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Acceptance testing</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>30</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Project management</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>75</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>15</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Configuration management</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>16</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Training </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>50</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Others</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>40</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Estimated effort </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>501</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>100%</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doclist>UCP = 295 * 1.0 * 0.74 = 218.3</p>
+
+<p class=doctext>Using the standard effort figure of 20 person-hours per UCP,
+he got the effort estimate as</p>
+
+<p class=doclist>218 * 20 = 4,360 person-hours = 499 person-days (at 8.75
+hrs/day)</p>
+
+<p class=doctext>or</p>
+
+<p class=doclist><span lang=EN-GB>513 person-days (at 8.5 hrs/day)</span></p>
+
+<p class=doctext><span lang=EN-GB>These estimates were amazingly close to the
+earlier estimate, increasing the confidence of the project manager in the
+estimation. (As it turns out, the estimates for this project were indeed highly
+accurate, as you will see in the closure report given in </span><a
+href="http:// /?xmlid=0-201-73721-3/ch12#ch12"><span
+lang=EN-GB style='color:#003399'>Chapter 12</span></a><span lang=EN-GB>. Furthermore,
+at all the milestones, the effort overrun, as compared to planned, was
+minuscule, as you will see in a milestone analysis given in </span><a
+href="http:// /?xmlid=0-201-73721-3/ch11#ch11"><span
+lang=EN-GB style='color:#003399'>Chapter 11</span></a><span lang=EN-GB>.)</span></p>
+
+<p class=doctext><span lang=EN-GB>In this project, as mentioned earlier, the
+iterative process of RUP was used. Because the phases of design, analysis, and
+build were spread over many iterations, a phase-wise effort estimate, by
+itself, would not have provided a direct input for planning. For planning, the
+project manager had to estimate the effort for the various iterations. To
+obtain this, he started with the overall estimate as determined earlier. The
+estimate for requirements was broken into project initiation and inception
+phases. The effort for design, build, and test was broken into elaboration and
+construction, based on the use cases chosen in the various iterations and the
+guidelines given in the RUP methodology. The project management, CM, and other
+costs remained the same. </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04table07#ch04table07"><span
+style='color:#003399'>Table 4.7</span></a> shows the distribution of effort by
+iterations.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=3 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch04table07></a><span
+  lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Table 4.7. Distribution
+  of Effort by Iterations in the ACIC Project</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Iteration</span></span></p>
+  </td>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Estimated Effort</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Person-days</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  class=docemphstrong1><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>% of Total Effort</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Project initiation</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>25</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Inception phase</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>24</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Elaboration phase: Iteration 1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>45</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>9</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Elaboration phase: Iteration 2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>34</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>7</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Construction phase: Iteration 1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>27</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Construction phase: Iteration 2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>24</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Construction phase: Iteration 3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>21</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Transition phase</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>110</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>22</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Project closure</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Project management</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>75</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>15</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Configuration management</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>16</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Training</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>50</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>10</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Others</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>40</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>8</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Total estimated effort </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>501 person-days</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>100%</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

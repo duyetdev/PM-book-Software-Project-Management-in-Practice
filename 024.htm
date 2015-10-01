@@ -1,0 +1,235 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>4.1 ESTIMATION AND SCHEDULING CONCEPTS</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>4.1 ESTIMATION
+AND SCHEDULING CONCEPTS</span></h3>
+
+<p class=doctext><span lang=EN-GB>Before we discuss the approach taken at
+Infosys, this section describes some concepts relating to estimation and
+scheduling. Effort estimation usually takes place in the early stages of a
+project, when the software to be built is being understood. It may be redone
+later when more information becomes available.</span></p>
+
+<p class=doctext><span lang=EN-GB>Highly precise estimates are generally not
+needed. Reasonable estimates in a software project tend to become a
+self-fulfilling prophecy—people work to meet the schedules (which are derived
+from effort estimates). Indeed, in software projects, one cannot even precisely
+answer the question, &quot;Is this estimate accurate?&quot; because the only
+way to ascertain the accuracy of an estimate is to compare it with the actual
+effort expended. Because of the general principle of human psychology reflected
+in the maxim &quot;work expands to fill the available time,&quot; one cannot
+say that just because the actual effort expended matches the estimated effort,
+the estimates are &quot;accurate.&quot; Hence, the goal for a project manager
+is to obtain <span class=docemphasis1>reasonable</span> estimates so that the
+goals are met and the project personnel are not burned out. The range of
+reasonableness is not very wide, and it depends on human factors, but it is
+probably wide enough to give sufficient leeway for estimation.</span></p>
+
+<p class=doctext><span lang=EN-GB>Effort estimation can rely on a hunch or on
+previous experience, but a more scientific and desirable approach is to use an
+estimation model.</span></p>
+
+<h4><a name=ch04lev2sec1></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>4.1.1 Effort Estimation Models</span></h4>
+
+<p class=doctext><span lang=EN-GB>A software <span class=docemphasis1>estimation
+model</span> defines the project characteristics whose values (or their
+estimates) it needs and the ways these values are used to compute the effort. An
+estimation model does not—and cannot—work in a vacuum; it needs inputs to
+produce the effort estimate as output. At the start of a project, when the
+details of the software itself are not known, the hope is that the estimation
+model will require values of characteristics that can be measured at that
+stage.</span></p>
+
+<p class=doctext><span lang=EN-GB>The size of the software is the predominant
+factor in determining how much effort is needed to build it. But the ultimate
+size is not known when the project is being conceived, and the software does
+not exist. Hence, if size is to be used for the effort estimation model, it
+must be estimated for the initial estimation.</span></p>
+
+<p class=doctext><span lang=EN-GB>A common approach is to use a simple equation
+to obtain an estimate of the overall effort from the size estimate. This
+equation can be determined through regression analysis of past data on effort
+and size.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry02"><sup><span
+lang=EN-GB style='color:#003399'>2</span></sup></a><span lang=EN-GB> Then, once
+the overall effort for the project is known, the effort for various phases or
+activities can be determined as a percentage of the total effort.</span></p>
+
+<p class=doctext><span lang=EN-GB>Many models have been proposed that use this <span
+class=docemphasis1>top-down approach</span> to estimation,</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry03"><sup><span
+lang=EN-GB style='color:#003399'>3</span></sup></a><span lang=EN-GB> with the
+COCOMO model being the most famous.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry04"><sup><span
+lang=EN-GB style='color:#003399'>4</span></sup></a><span lang=EN-GB> Models
+using function points (instead of LOC) as size units have also been built.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry05"><sup><span
+lang=EN-GB style='color:#003399'>5</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry06"><sup><span
+lang=EN-GB style='color:#003399'>6</span></sup></a><span lang=EN-GB> In these
+models, you can accommodate other factors that affect the effort by refining
+the estimates based on these factors. This is the approach taken in the COCOMO
+model.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><span lang=EN-GB> Another
+approach is to adjust the size of the system based on these parameters, as is
+done in function points.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry07"><sup><span
+lang=EN-GB style='color:#003399'>7</span></sup></a></p>
+
+<p class=doctext><span lang=EN-GB>In the <span class=docemphasis1>bottom-up
+approach,</span> on the other hand, you obtain the estimates first for parts of
+the project and then for the overall estimate.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><span lang=EN-GB> That is,
+the overall estimate of the project is derived from the estimates of its parts.
+One bottom-up method calls for using some type of <span class=docemphasis1>activity-based</span>
+estimation. In this strategy, the major activities are first enumerated, and
+then the effort for each activity is estimated. From these estimates, the
+effort for the overall project is obtained.</span></p>
+
+<p class=doctext><span lang=EN-GB>The bottom-up approach lends itself to direct
+estimation of effort; once the project is partitioned into smaller tasks, it is
+possible to directly estimate the effort required for them. Although size does
+play a role in determining the effort for many activities in a project, a key
+advantage of this approach is that it does not require explicit size estimates
+for the software. Instead, it requires a list of project tasks, which might be
+easier to prepare in some situations. A risk of bottom-up methods is that you
+may omit some important activities in the list of tasks. When effort is
+directly estimated for tasks, it may prove difficult to directly estimate the
+effort required for some overhead tasks, such as project management, that span
+the project and are not as clearly defined as coding or testing.</span></p>
+
+<p class=doctext><span lang=EN-GB>Both the top-down and the bottom-up
+approaches require information about the project: size (for top-down
+approaches) and a list of tasks (for bottom-up approaches). In many ways, these
+approaches are complementary.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><span lang=EN-GB> Both types
+of estimates are more accurate if more information about the project is
+available or as the project proceeds. For example, estimating the size is much
+more difficult when very high level requirements are given but becomes
+considerably easier when design is finished, and even easier and more accurate
+when code is developed. Thus, the accuracy of estimates depends on the point at
+which effort is estimated, with accuracy increasing as more information about
+the project becomes available.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry04"><sup><span
+lang=EN-GB style='color:#003399'>4</span></sup></a></p>
+
+<h4><a name=ch04lev2sec2></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>4.1.2 Estimating Schedule</span></h4>
+
+<p class=doctext><span lang=EN-GB>Once the effort is known or fixed, various
+schedules (or project <span class=docemphasis1>duration</span>) are possible,
+depending on the number of <span class=docemphasis1>resources</span> (people)
+put on the project. For example, for a project whose effort estimate is 56
+person-months, a total schedule of 8 months is possible with 7 people. A
+schedule of 7 months with 8 people is also possible, as is a schedule of
+approximately 9 months with 6 people.</span></p>
+
+<p class=doctext><span lang=EN-GB>As is well known, however, manpower and
+months are not fully interchangeable in a software project.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry08"><sup><span
+lang=EN-GB style='color:#003399'>8</span></sup></a><span lang=EN-GB> For
+instance, in the example here, a schedule of 1 month with 56 people is not possible
+even though the effort &quot;matches&quot; the requirement. Similarly, no one
+would execute the project in 28 months with 2 people. In other words, once the
+effort is fixed, you can gain some flexibility in setting the schedule by
+appropriately staffing the project. But this flexibility is not unlimited, a
+fact corroborated by data that shows that no simple equation between effort and
+schedule fits the empirical data.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry09"><sup><span
+lang=EN-GB style='color:#003399'>9</span></sup></a></p>
+
+<p class=doctext><span lang=EN-GB>&quot;Stretching&quot; the schedule is easy;
+you simply apply fewer people (although the project may not be very valuable if
+completed over a long duration). Compressing the schedule, however, is not
+easy. A clear example is given earlier: You cannot compress the schedule of a
+56 person-month project to 1 month regardless of the resources you apply. And,
+generally speaking, compressing the schedule beyond what is &quot;normal&quot;
+increases the effort; by having more resources than optimally needed, you might
+end up wasting them, doing more rework, and so on.</span></p>
+
+<p class=doctext><span lang=EN-GB>Some approaches discuss the effect of
+schedule compression on total effort. However, to assess that effect you must
+first define the normal schedule for a project.</span></p>
+
+<p class=doctext><span lang=EN-GB>One method to determine the <span
+class=docemphasis1>normal</span> (or <span class=docemphasis1>nominal</span>)
+schedule is to use a suitable function to determine it from the effort. In
+turn, one method for determining the function is to study the patterns in data
+from completed projects. For example, you can obtain a scatter plot of effort
+and schedule for completed projects and then fit a regression curve through
+this scatter plot. This curve is generally nonlinear because the schedule does
+not grow linearly with effort. You can then use the equation for the curve to
+determine the schedule for a project whose effort has been estimated. Many
+models follow this approach, and Boehm's book summarizes the various models.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry01"><sup><span
+style='color:#003399'>1</span></sup></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

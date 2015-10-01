@@ -1,0 +1,540 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>9.2 THE CONFIGURATION MANAGEMENT PROCESS</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+span.docemphstrong1
+	{font-weight:bold;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>9.2 THE
+CONFIGURATION MANAGEMENT PROCESS</span></h3>
+
+<p class=doctext><span lang=EN-GB>The CM process defines the sequence of
+activities that must be performed in support of the CM mechanisms. As with most
+activities in project management, the first stage in the CM process at Infosys
+is planning—identifying those items that need to be under CM (known as <span
+class=docemphasis1>configuration items</span>), locations to store them,
+procedures for change control, and so on. The project manager or the
+configuration controller (CC) of the project prepares this plan. Then the
+process must be executed, perhaps by deploying a tool (the use of which also
+must be planned). Finally, because any CM plan requires discipline on the part
+of the project personnel in terms of maintaining versions, storing items in
+proper locations, and making changes properly, monitoring the status of the
+configuration items and performing CM audits are therefore other activities in
+the CM process. This chapter discusses these three activities of the CM process
+at Infosys.</span></p>
+
+<h4><a name=ch09lev2sec1></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>9.2.1 Planning and Setting Up Configuration Management</span></h4>
+
+<p class=doctext><span lang=EN-GB>Planning for configuration management
+involves identifying the configuration items and specifying the procedures to
+be used for controlling and implementing changes to them. Identifying
+configuration items is a fundamental activity in any type of CM.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry02"><sup><span
+lang=EN-GB style='color:#003399'>2</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry03"><sup><span
+lang=EN-GB style='color:#003399'>3</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry04"><sup><span
+lang=EN-GB style='color:#003399'>4</span></sup></a><span lang=EN-GB> Typical
+examples of configuration items include requirements specifications, design
+documents, source code, test plans, test scripts, test procedures, test data,
+standards used in the project (such as coding standards and design standards),
+the acceptance plan, documents such as the CM plan and the project plan, user documentation
+such as the user manual, and documents such as the training material, contract
+documents (including support tools such as a compiler or in-house tools),
+quality records (review records, test records), and CM records (release
+records, status tracking records). Any customer-supplied products or purchased
+items that will be part of the delivery (called &quot;included software
+product&quot;) are also configuration items.</span></p>
+
+<p class=doctext>During planning, the types of items that come under the aegis
+of CM are identified, but a detailed list of items is not prepared. This
+omission reflects the fact that some items may not be known during CM planning
+(which occurs at the beginning of the project). To facilitate proper naming of
+configuration items, the naming conventions for CM items are established during
+the CM planning stages. In addition to naming standards, project managers must
+plan version numbering. When a configuration item is changed, the old item is
+not replaced with the new copy; instead, the old copy is maintained and a new
+one is created. This approach results in multiple versions of an item, so
+policies for version number assignment are needed. If a CM tool is being used,
+sometimes the tool handles the version numbering. Otherwise, it must be
+explicitly handled in the project.</p>
+
+<p class=doctext>During planning, the project manager must decide how to
+maintain the state of a program. One way of collecting items in different
+states is to create separate directories for them. All items in a certain state
+reside in the directory for that state. When the state of a program changes,
+that program is moved from the directory for the old state to the directory for
+the new state. This approach is a general one and does not require the use of
+any tool to maintain the state information. If a CM tool is available, however,
+the directory structure needed for managing the states of programs depends on
+the tool. During the planning phase, project managers must set the directory
+structure employed for managing the states, keeping in mind the requirements of
+the CM tool, if any.</p>
+
+<p class=doctext>The configuration controller or the project manager does the
+CM planning. It is begun only when the project has been initiated and the
+operating environment and requirements specifications are clearly documented.
+The activities in this stage include the following:</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Identify configuration items, including customer-supplied and
+purchased items.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Define a naming and numbering scheme for the configuration items.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Define the directory structure needed for CM.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Define access restrictions.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Define change control procedures.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Identify and define the responsibility and authority of the CC or
+Configuration Control Board (CCB).</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Define a method for tracking the status of configuration items.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Define a backup procedure.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Define a reconciliation procedure, if needed.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Define a release procedure.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Define an archival procedure.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Identify points at which the configuration items will be moved to
+the baseline.</p>
+
+<p class=doctext>The output of this phase is the CM plan. The CC is responsible
+for the implementation of the CM plan. Depending on the size of the system
+under development, the CC's role may be a part-time or a full-time job. The CC
+can also be responsible for managing the release, archiving the release,
+retrieving and releasing appropriate versions when required, and more.</p>
+
+<p class=doctext>In certain cases—when there are large teams or when two or
+more teams or groups are involved in the development of the same or different
+portions of the software or interfacing systems—it may be necessary to have a
+CCB. This board includes representatives from each of the teams. A CCB (or a
+CC) is considered essential for CM,<a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry03"><sup><span
+style='color:#003399'>3</span></sup></a> and the CM plan must clearly define
+the roles and responsibilities of the CC or CCB. These duties also depend on
+the type of file system and tools being used.</p>
+
+<p class=doctext>As noted earlier, CM requires that access to some items in
+some states remain restricted. For example, the programmers' access and right
+to modify a program in the baseline must be limited. Planning activities must
+therefore specify the access rights of the CC, the project manager, and the
+developers.</p>
+
+<p class=doctext>Policies and procedures for change control are also
+established during planning. This includes controlling normal changes that take
+place during the life cycle as well as changes that are driven by requirement
+changes. Normal changes are generally managed through a library mechanism and
+directory structure. Changes due to requirement change requests, which may
+necessitate that many programs be changed, are frequently tracked through a
+spreadsheet that lists all items that must be changed as well as the directory
+for each item (thereby giving its state).</p>
+
+<p class=doctext>If project managers allow concurrent updates to programs, they
+must specify reconciliation procedures. Concurrent updates are sometimes
+necessary. For example, suppose a high-priority change request comes in at the
+same time that another change request is being implemented. Clearly, the new
+change request cannot be put on hold until the first one is finished.
+Similarly, if problems occur in the working system while a change request is
+being implemented, then changes must be made immediately to ensure that the
+system can continue to function. For such situations, reconciliation procedures
+are needed.</p>
+
+<p class=doctext>One possible procedure is to state that the differences
+between the original version and the new versions will be examined, and the
+changes in the version having fewer changes will be merged in the other
+version. If the changes affect different parts of the program, merging is
+straightforward; some CM tools readily support this capability. Otherwise, the
+programmer must review the overlap and then accommodate both changes.</p>
+
+<p class=doctext>All elements of the plan are documented in the CM plan. Later
+in this chapter we give the CM plan for the ACIC project.</p>
+
+<h4><a name=ch09lev2sec2></a><span style='font-size:13.0pt;font-family:Arial'>9.2.2
+Perform Configuration Control</span></h4>
+
+<p class=doctext>Although configuration control activities are undertaken
+during the execution phase of the project, we discuss them here along with
+other aspects of CM. Two main configuration control activities are performed:
+one that deals with managing the state transitions of programs (and documents),
+and one that deals with managing the change requests that must be implemented.</p>
+
+<p class=doctext>State transition management involves moving the items from one
+directory to another when the state changes and then creating versions when
+changes are made.</p>
+
+<p class=doctext>Frequently, tools are used to manage the states and versions
+of items and access to them. Many CM tools employ the check-in/check-out
+procedure for controlling access and handling version control. The basic idea
+behind this approach is as follows. A program is considered to be in a <span
+class=docemphasis1>controlled environment</span> when it is in any state in
+which others can use it. Once a program is in the controlled environment, it
+cannot be modified, even by the original author, without proper <span
+class=docemphasis1>authorization</span>, because others may be using it. To
+make an approved change, the developer must check the program out of the
+controlled environment. Checking out essentially implies making a copy of the
+item without destroying the earlier version, and making a note that the item
+has been checked out.</p>
+
+<p class=doctext>An item is modified after it has been checked out. The
+modifications must then be reflected in the controlled environment so that
+others have the benefit of the new version and so that the change request
+(which may have forced the changes) can be truly implemented. Because other
+team members may be using the items, some checks are done to ensure that the
+changed item is suitable before it is checked back in. When an item is checked
+back into the controlled environment, the older copy is not destroyed; instead,
+a new version is created. Often, only the CC or the project leader can check
+items in. This limitation makes it possible to roll back the changes if the need
+arises.</p>
+
+<p class=doctext>To provide information about changes that have been made,
+project managers can opt to keep a modification log in the program source
+itself. This log essentially identifies the start and end of a change and
+includes a reference to the change request that prompted it.</p>
+
+<p class=doctext>All these tasks—checking in, checking out, version
+maintenance, and creation of a modification log—can be handled through the use
+of proper CM tools. Various tools are available that perform many aspects of
+this CM library function.</p>
+
+<p class=doctext>To implement requirement changes, which in turn trigger
+changes to configuration items, a change request is first analyzed by
+performing an impact analysis (discussed in <a
+href="http:// /?xmlid=0-201-73721-3/ch03#ch03"><span
+style='color:#003399'>Chapter 3</span></a>). This analysis determines the
+programs and documents that need to be changed and the cost and schedule
+implications of making the change. Once the change is approved by the project
+leader and the CC, all programs and documents identified in the impact analysis
+must be changed appropriately. The following activities are part of
+implementing a change request:</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Accept the change request (with impact analysis).</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Set up a tracking mechanism.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Check out configuration items that need to be changed.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Perform the changes.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Check in the configuration items.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Take the item through its life cycle.</p>
+
+<p class=doctext>A spreadsheet-based mechanism is frequently used for tracking
+the status of change requests. For each change request, a spreadsheet is
+created that lists all programs being changed and their status. To implement a
+change, the CC or CCB assigns modifications to different items as tasks to
+members of the team, who check the items out so as to make these changes. After
+a team member makes a change, the changed program (or document) can be viewed
+as a new program that must go through different states (representing the life
+cycle of the program) before it can become part of the final in-operation
+system. Once all altered programs and their associated documents reach the baseline
+(after following their life cycle), the change request is considered to be
+fully implemented.</p>
+
+<h4><a name=ch09lev2sec3></a><span style='font-size:13.0pt;font-family:Arial'>9.2.3
+Status Monitoring and Audits</span></h4>
+
+<p class=doctext><span lang=EN-GB>A configuration item can exist in one of
+several states. The set of possible states varies according to whether the item
+is a program or a document and the type of CM tools being used. It is important
+to accurately represent the state of each item because state-related mistakes
+can lead to problems. For example, if a program has not been unit tested but is
+moved to the state &quot;ready for release,&quot; it can cause problems. Similarly,
+if the system fails to reflect the fact that a program has been checked out
+from the baseline to implement a change, the software might be delivered
+without the change. Thus, when a requirement change request is implemented, it
+is also important that the mechanisms used to capture the state accurately
+represent the state.</span></p>
+
+<p class=doctext><span lang=EN-GB>If projects use a mechanism based on a
+directory structure to represent the state of a program, mistakes are possible.
+This type of mechanism requires that the programs be moved properly from one
+directory to another when their state changes and that the change of state be
+reflected in the master table that maintains the states of the various items. To
+minimize mistakes and catch any errors early, projects must perform regular
+status checking of the configuration items. A report can be produced about the
+discrepancies, and all such discrepancies must be resolved.</span></p>
+
+<p class=doctext><span lang=EN-GB>In addition to checking the status of the
+items, projects must check the status of change requests. To accomplish this
+goal, change requests that have been received since the last CM status
+monitoring operation are examined. For each change request, the state of the
+item as mentioned in the change request records is compared to the actual
+state. Checks can also be done to ensure that all modified items go through
+their full life cycle (that is, the state diagram) before they are incorporated
+in the baseline.</span></p>
+
+<p class=doctext><span lang=EN-GB>Finally, projects can perform a configuration
+audit. As in other audits, the main focus here is to ensure that the CM process
+of the project is indeed being followed. The baseline for the system can also
+be audited to ensure that its integrity is not being violated and that items
+are moved to and from the baseline in a manner consistent with the CM plans.</span></p>
+
+<p class=doctext><span lang=EN-GB>The project's configuration controller
+generally conducts the CM audits. After a CM audit, a report is usually issued
+that lists what needs to be done to keep the CM activities consistent with the
+CM plan. </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch09lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch09table01#ch09table01"><span
+lang=EN-GB style='color:#003399'>Table 9.1</span></a><span lang=EN-GB> shows an
+example of the CM audit report for the ACIC project (whose CM plan is given
+later in this chapter). As you can see, in addition to looking at the process,
+the CM audit focuses on the status and location of the configuration items.</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=4 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch09table01></a><span
+  lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Table 9.1. CM Audit
+  Report for the ACIC Project</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Sequence Number</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Observation</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Responsible</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Complete By</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Mails to be logged in to the Messages/User folder</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>PL, DVs</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>06 Aug 2000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Reviewed sequence diagrams to be moved under VSS</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>PL</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>06 Aug 2000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>CM plan to be updated with the changed directory structure</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>CC</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>05 Aug 2000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>4</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Completed sequence diagrams to be moved from users' area to the
+  review area</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>PL</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>06 Aug 2000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>5</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Update VSS to reflect the modifications in the storage structure</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>CC</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>06 Aug 2000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.5pt;font-family:Arial;color:black'>6</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>ProjectDocs subfolder in Users folder to be cleaned up</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>All</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>06 Aug 2000</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

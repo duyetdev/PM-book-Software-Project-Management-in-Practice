@@ -1,0 +1,569 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>1.2 PROJECT MANAGEMENT AND THE CMM</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;
+	font-weight:bold;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;
+	font-weight:bold;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+span.docemphstrong1
+	{font-weight:bold;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>1.2 PROJECT
+MANAGEMENT AND THE CMM</span></h3>
+
+<p class=doctext><span lang=EN-GB>Once it is accepted that use of effective
+processes can help in executing a project successfully, a question immediately
+arises: What are the desirable characteristics of these processes? The CMM for
+software is a framework that tries to answer this question.</span></p>
+
+<p class=doctext><span lang=EN-GB>The CMM for software is a framework that was
+developed by the Software Engineering Institute (SEI) at Carnegie Mellon
+University by observing the best practices in software and other organizations.
+Hence, the CMM reflects the collective process experience and expectations of
+many companies. It specifies desired characteristics of processes without
+prescribing specific processes. Thus, different processes can fulfill the
+requirements of the CMM. It can be used to evaluate the software process of an
+organization and to identify deficiencies.</span></p>
+
+<p class=doctext><span lang=EN-GB>The CMM is one of the most popular frameworks
+for software process improvement (the other commonly used framework is ISO 9001</span><a
+href="http:// /?xmlid=0-201-73721-3/ch01lev1sec6#ch01entry03"><sup><span
+lang=EN-GB style='color:#003399'>3</span></sup></a><span lang=EN-GB>,</span><a
+href="http:// /?xmlid=0-201-73721-3/ch01lev1sec6#ch01entry04"><sup><span
+lang=EN-GB style='color:#003399'>4</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch01lev1sec6#ch01entry05"><sup><span
+lang=EN-GB style='color:#003399'>5</span></sup></a><span lang=EN-GB>). The
+foundations of the CMM were laid down in Watts Humphrey's <span
+class=docemphasis1>Managing the Software Process</span>,</span><a
+href="http:// /?xmlid=0-201-73721-3/ch01lev1sec6#ch01entry06"><sup><span
+lang=EN-GB style='color:#003399'>6</span></sup></a><span lang=EN-GB> and the
+framework itself is described completely in the SEI's <span class=docemphasis1>The
+Capability Maturity Model: Guidelines for Improving the Software Process</span>.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch01lev1sec6#ch01entry07"><sup><span
+lang=EN-GB style='color:#003399'>7</span></sup></a><span lang=EN-GB> A
+&quot;new edition&quot; of the CMM, called CMM-I, has been released. But
+because the focus of this book is not on the models and because there is still
+little experience available with CMM-I, I discuss only the CMM for software and
+only the project management aspects, even though the CMM also covers organizational
+and process management issues. I do not discuss the assessment procedure, a
+brief description of which is given in my book <span class=docemphasis1>CMM in
+Practice</span>,</span><a
+href="http:// /?xmlid=0-201-73721-3/ch01lev1sec6#ch01entry08"><sup><span
+lang=EN-GB style='color:#003399'>8</span></sup></a><span lang=EN-GB> and a detailed
+description given in <span class=docemphasis1>CMM Based Appraisal for Internal
+Process Improvement</span>, by S. Masters.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch01lev1sec6#ch01entry09"><sup><span
+lang=EN-GB style='color:#003399'>9</span></sup></a></p>
+
+<h4><a name=ch01lev2sec1></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>1.2.1 Overview of the CMM</span></h4>
+
+<p class=doctext><span lang=EN-GB>One objective of the CMM is to distinguish
+mature processes from immature, or ad hoc, processes. Immature software
+processes imply that projects are executed without many guidelines, and the
+outcome of a project depends largely on the capability of the team and the
+project leader. On the other hand, with mature processes, a project is executed
+by following defined processes. In this case, the outcome of the project is
+less dependent on people and more on the processes. It follows, then, that the
+more mature the processes, the more predictable the results and the more well
+controlled the projects.</span></p>
+
+<p class=doctext><span lang=EN-GB>The range of results that can be expected in
+a project when it is executed using a process is its <span class=docemphasis1>process
+capability.</span> The actual result achieved in a project executed using the
+process is its <span class=docemphasis1>process performance.</span> Clearly,
+the process performance depends on the process capability. To consistently
+improve process performance on projects, you must enhance the process
+capability; the process itself must become more mature.</span></p>
+
+<p class=doctext><span lang=EN-GB>The path to higher maturity includes some
+well-defined plateaus referred to as <span class=docemphasis1>maturity levels</span>
+by the CMM. Each maturity level specifies certain characteristics for
+processes, with higher maturity levels having more advanced characteristics
+that are found in more mature software processes. Hence, the CMM framework
+describes the key elements of software processes at different levels of
+maturity. Consequently, it also specifies the path that a software process
+follows in moving from immature processes to highly mature processes. This path
+includes five maturity levels, as shown in </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch01lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch01fig01#ch01fig01"><span
+lang=EN-GB style='color:#003399'>Figure 1.1</span></a><span lang=EN-GB>.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch01lev1sec6#ch01entry07"><sup><span
+style='color:#003399'>7</span></sup></a></p>
+
+<h5 align=center style='text-align:center'><a name=ch01fig01></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 1.1. Maturity levels in the
+CMM</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=610 src="005_files/image001.gif" alt="graphics/01fig01.gif"></p>
+
+<p class=doctext><span lang=EN-GB>In level 1, the <span class=docemphasis1>initial</span>
+level, a project is executed in a manner that the team and project manager see
+fit. The <span class=docemphasis1>repeatable</span> level (level 2) applies
+when established project management practices are employed, although
+organization-wide processes may not exist. At the <span class=docemphasis1>defined</span>
+level (level 3), organization-wide processes have been defined and are
+regularly followed. At the <span class=docemphasis1>managed</span> level (level
+4), quantitative understanding of the process capability makes it possible to
+quantitatively predict and control the process performance on a project. At the
+<span class=docemphasis1>optimizing</span> level (level 5), the process
+capability is improved in a controlled manner and the improvement is evaluated
+quantitatively.</span></p>
+
+<p class=doctext>Each maturity level (except level 1) is characterized by <span
+class=docemphasis1>key process areas</span> (KPAs), which specify the areas on
+which the organization should focus to elevate its processes to that maturity
+level. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch01lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch01fig01#ch01fig01"><span
+style='color:#003399'>Figure 1.1</span></a> also shows the KPAs for the
+different levels. For an organization to achieve a maturity level, it must
+satisfy all the KPAs at that maturity level as well as the KPAs at all lower
+maturity levels.</p>
+
+<p class=doctext>Maintaining processes at higher levels of maturity is a
+challenging task requiring commitment from the organization and a proper work
+culture. Of the 900 assessments conducted between 1996 and June 2000 whose
+assessment results were provided to the SEI, only 3% of the organizations were
+at level 5, and another 5% were at level 4.<a
+href="http:// /?xmlid=0-201-73721-3/ch01lev1sec6#ch01entry10"><sup><span
+style='color:#003399'>10</span></sup></a> The rest were at level 3 or below,
+with 38% at level 2 and 18% at level 3.</p>
+
+<h4><a name=ch01lev2sec2></a><span style='font-size:13.0pt;font-family:Arial'>1.2.2
+KPAs for Project Management</span></h4>
+
+<p class=doctext>Each KPA specifies goals that the processes of the
+organization must meet to satisfy that KPA. In addition, each KPA specifies a
+group of activities, called <span class=docemphasis1>key practices</span>, that
+collectively satisfy the goals of that KPA. In many senses, the goals for each
+KPA capture its essence. They specify the objectives that the CMM has set for
+the processes relating to the KPA. To illustrate the KPAs associated with
+project management, we briefly discuss here the goals of these KPAs. These
+goals are taken from the CMM,<a
+href="http:// /?xmlid=0-201-73721-3/ch01lev1sec6#ch01entry07"><sup><span
+style='color:#003399'>7</span></sup></a> with some minor changes in the wording
+of some goals.</p>
+
+<p class=doctext><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch01lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch01table01#ch01table01"><span
+style='color:#003399'>Table 1.1</span></a> lists all the goals for KPAs at
+level 2, showing clearly that the level 2 focus is almost exclusively on
+project management. Under these goals, you create and document a project plan,
+evaluate the ongoing project performance against the plan, and take actions
+when the actual performance significantly deviates from the plan. Requirements
+are properly documented, and changes to requirements are properly managed. All
+work products are controlled, and changes to products are properly managed
+through a planned configuration management plan. Reviews and audits are
+performed to ensure that planned processes and standards are being followed. If
+some parts of the project are subcontracted to other vendors, the subcontracted
+work is also monitored properly.</p>
+
+<p class=doctext><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch01lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch01table02#ch01table02"><span
+style='color:#003399'>Table 1.2</span></a> details the goals of three of the
+seven KPAs at level 3. The other KPAs focus on organizational and process
+management issues. A project in a level 3 organization uses a tailored version
+of the standard process and reuses assets, data, and experience from past projects
+for planning. The various groups that contribute to the project cooperate
+smoothly through well-defined interfaces and mechanisms. Reviews are properly
+carried out to identify defects in work products, and sufficient support for
+conducting reviews and follow-up activities is provided.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=2 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch01table01></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 1.1. Goals for KPAs at Level
+  2 (Repeatable)</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>KPA</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Goals</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Requirements Management (RM)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Software requirements are controlled to establish a baseline
+  for software engineering and management activities.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Software plans, products, and activities are kept consistent
+  with requirements.</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Software Project Planning (SPP)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Estimates are documented for use in planning and tracking the
+  project.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Project activities and commitments are planned and documented.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Affected groups and individuals agree to their commitments
+  related to the project.</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Software Project Tracking and Oversight (SPTO) </span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Actual results and performances are tracked against the
+  software plans.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Corrective actions are taken and managed to closure when actual
+  results and performance deviate significantly from the software plans.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Changes to commitments are agreed to by the affected groups and
+  individuals.</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Software Subcontract Management (SSM)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>The prime contractor and the subcontractor agree to their
+  commitments.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>The prime contractor tracks the subcontractor's actual results
+  against its commitments.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>The prime contractor and the subcontractor maintain ongoing
+  communication.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>The prime contractor tracks the subcontractor's actual
+  performance against its commitments.</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Software Quality Assurance (SQA)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Software quality assurance activities are planned.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Adherence of software products and activities to the applicable
+  standards, procedures, and requirements is verified objectively.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Affected groups and individuals are informed of software
+  quality assurance activities and results.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Noncompliance issues that cannot be resolved within the project
+  are addressed by senior management.</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Software Configuration Management (SCM)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Software configuration management activities are planned.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Selected software work products are identified, controlled, and
+  available.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Changes to identified software work products are controlled.</p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Affected groups and individuals are informed of the status and
+  content of software baselines.</p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><a name=ch01table02></a><span
+style='color:black;display:none'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=2 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><span style='font-size:10.5pt;
+  font-family:Arial'>Table 1.2. Goals of Three KPAs at Level 3 (Defined)</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>KPA</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Goals</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Integrated Software Management (ISM)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>The project's defined software process is a
+  tailored version of the organization's standard software process.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>The project is planned and managed according
+  to the project's defined software process.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Intergroup Coordination (IC)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>All affected groups agree to the customer's
+  requirements.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>All groups agree to the commitments between
+  different groups.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>The groups identify, track, and resolve
+  intergroup issues.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Peer Reviews (PR)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Peer review activities are planned.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Defects in the software work products are
+  identified and removed.</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch01lev1sec2&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch01table03#ch01table03"><span
+lang=EN-GB style='color:#003399'>Table 1.3</span></a> <span lang=EN-GB>shows
+the goals for the two KPAs at level 4. At level 4, the capability of the
+organization's process is understood in quantitative terms. The process
+capability is used to set quantitative goals for a project. Data on project
+performance are collected on an ongoing basis and are compared with data on
+past performance; if significant deviations are observed, proper corrective
+actions are applied to bring the project back in control. A key aspect of level
+4 is the use of statistical process control techniques on an ongoing basis so
+that each activity can be evaluated and corrective action taken if needed.</span></p>
+
+<p class=doctext><span lang=EN-GB>The three KPAs at level 5 focus on improving
+the capability of the process. Of the three KPAs, the Defect Prevention KPA is
+the one that most directly affects project management. This KPA requires that
+defects be prevented proactively by systematically analyzing the causes of
+defects and then eliminating those causes. If defects can be prevented from
+entering the software, the effort spent in removing them can be reduced,
+thereby improving quality and productivity.</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=2 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch01table03></a><span
+  lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Table 1.3. Goals for
+  KPAs at Level 4 (Managed)</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>KPA</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Goals</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Quantitative Process Management (QPM)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>The quantitative process management activities
+  are planned.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>The process performance of the project's
+  defined software process is controlled quantitatively.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>The process capability of the organization's
+  standard software process is known in quantitative terms.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Software Quality Management (SQM)</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>The project's software quality management
+  activities are planned.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Measurable goals for software product quality
+  and their priorities are defined.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Actual progress toward achieving the quality
+  goals for the software products is quantified and managed.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

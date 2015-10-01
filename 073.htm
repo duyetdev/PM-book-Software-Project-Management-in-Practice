@@ -1,0 +1,201 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>11.3 ACTIVITY-LEVEL ANALYSIS USING SPC</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphstrong1
+	{font-weight:bold;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>11.3
+ACTIVITY-LEVEL ANALYSIS USING SPC</span></h3>
+
+<p class=doctext><span lang=EN-GB>Milestone analysis uses metrics to monitor
+the state of the project at defined milestones and to suggest corrective
+actions if needed. However, with milestone-based analysis, it is hard to
+determine which of the many activities performed since the last milestone may
+be the cause of performance degradation. This situation is similar to
+performing system testing; debugging is much harder when the system comprises
+many units. It is far easier to debug during unit testing. This difficulty in
+pinning down the cause of poor performance limits the corrective actions that
+can be taken.</span></p>
+
+<p class=doctext><span lang=EN-GB>To provide finer control, activity-level
+analysis is also done at Infosys. In activity-level analysis, some metrics are
+analyzed immediately after a task is performed. The analysis is used to
+evaluate the effectiveness of the task performance. If the task has not been
+performed satisfactorily, immediate action can be taken to correct it and to
+prevent a repetition.</span></p>
+
+<p class=doctext><span lang=EN-GB>Activity-level analysis is usually done using
+statistical process control (SPC). At Infosys, reviews and unit testing have
+been identified as the two tasks for which SPC is applied. Using control
+charts, the project manager immediately evaluates the effectiveness of a review
+or a unit test. If the performance is not satisfactory, necessary action can be
+taken.</span></p>
+
+<p class=doctext><span lang=EN-GB>Note that the broad activities of design,
+detailed design, system testing, and so on are already evaluated individually
+through milestone analysis because they typically start and finish at
+milestones. Hence, the focus of activity-level monitoring is on the
+coding-related activities of reviews and unit testing.</span></p>
+
+<p class=doctext><a
+href="http:// /?xmlid=0-201-73721-3/ch07#ch07"><span
+lang=EN-GB style='color:#003399'>Chapter 7</span></a><span lang=EN-GB>
+discusses the basics of statistical process control, and </span><a
+href="http:// /?xmlid=0-201-73721-3/ch10#ch10"><span
+lang=EN-GB style='color:#003399'>Chapter 10</span></a><span lang=EN-GB>
+explains the monitoring and control of reviews using SPC. Here we discuss
+activity-level monitoring and control of unit testing—the other activity for
+which SPC is applied. The approach for unit testing is similar to that used for
+monitoring reviews. The main performance characteristic that is monitored is
+the density of defects detected in unit testing. From the past data on unit
+testing, the control limits (that is, the range of acceptable density) are
+obtained. At the end of each unit test, the defect density is checked against
+the range. If it falls outside the limits, corrective or preventive actions may
+have to be taken. The guidelines given earlier for testing can be used to
+decide which actions are needed (for analysis, project managers can use
+supporting information about effort spent on the task, effort expended on
+previous tasks, and defects found). </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11fig04#ch11fig04"><span
+lang=EN-GB style='color:#003399'>Figure 11.4</span></a><span lang=EN-GB> shows
+the control chart for defect density for unit testing of one programming
+language. The defect density can be plotted in terms of the number of defects
+per LOC or the number of defects per person-hour. </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11table05#ch11table05"><span
+lang=EN-GB style='color:#003399'>Table 11.5</span></a><span lang=EN-GB> shows
+the capability baseline for unit testing, giving defect rates for a few
+languages.</span></p>
+
+<h5 align=center style='text-align:center'><a name=ch11fig04></a><span
+lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Figure 11.4. Control
+chart for unit testing of Visual Basic programs</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=294 src="073_files/image001.gif" alt="graphics/11fig04.gif"></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=2 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch11table05></a><span
+  lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Table 11.5. Unit
+  Testing Defect Rates for Some Languages</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Language</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Defect Rate Range (Average)</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>PB</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.0003–0.0266 defects/LOC (Avg: 0.008)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>C</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.0004–0.0206 defects/LOC (Avg: 0.0052)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>C++</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.00009–0.0067 defects/LOC (Avg: 0.0017)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>RPG</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>0.0006–0.0075 defects/LOC (Avg: 0.0025)</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span lang=EN-GB>As with reviews, project managers can use the
+SPC tool to implement activity-level control of unit testing. This tool
+contains relevant past performance data such as the defect injection rate, the
+defect removal percentage, and so on. Using this data, it determines the
+control limits as well as expected limits. When the performance data of a unit
+test is entered, the tool immediately tells whether or not the performance is
+outside the limits. If it is outside the limits, further analysis must be done
+to determine what action, if any, should be taken.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

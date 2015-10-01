@@ -1,0 +1,117 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>Chapter 9. Configuration Management</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h2
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA>
+
+<div class=Section1>
+
+<h2><span lang=EN-GB style='font-size:16.5pt;font-family:Arial'>Chapter 9.
+Configuration Management</span></h2>
+
+<p class=doctext><span lang=EN-GB>Changes—those due to the evolution of work
+products and those due to requirement changes—take place continuously in a
+software project. All these changes eventually get reflected as changes in the
+files containing source, data, or documentation. When multiple people create
+and change the huge number of files in a software project, it can lead to
+complications unless the changes are properly controlled. </span>Consider these
+situations, taken from various projects.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Two different change requests came from the
+customer. The project manager assigned one request to Rao for implementation,
+and the other to Meera. Both had to modify code for module X. When Meera
+finished her modification, she saved the file for X, inadvertently overwriting
+the changes Rao had made a day earlier.</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Friday was the deadline for release of a module
+for which three team members were developing the code. Integration of
+unit-tested code was planned for the final two days. On Tuesday night, Subbu,
+the developer of several key functions, left town to attend to an emergency. The
+next day the module leader and the team members spent many hours looking
+through Subbu's files. They managed to identify some files containing the
+various functions Subbu was developing, but they found umpteen versions of
+these files. One of the team members had to work on the problem over the
+weekend. Starting with some version of Subbu's programs, he developed and
+tested the unit, redoing the work that Subbu had almost finished before
+leaving. </span>The module was finally delivered three days late.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Srinath's team was in good spirits. They had
+finished the development on time, and the final testing had shown no bugs. The
+software was released to the customer for implementation. The next day Srinath
+received angry e-mails from the users and the customer, reporting problems in
+the software. After frantic effort by the team, the cause was found: The
+release version of the software contained an older version of a key component.</span></p>
+
+<p class=doctext><span lang=EN-GB>Stories like this can be found in most
+organizations. <span class=docemphasis1>Configuration management</span>
+(CM)—also known as software configuration management (SCM)—is the aspect of
+project management that focuses exclusively on systematically controlling the
+changes so that such problems do not occur.</span></p>
+
+<p class=doctext><span lang=EN-GB>This chapter first discusses some general
+concepts relating to CM and then describes the CM process followed at Infosys. It
+also gives the CM plan for the case study.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

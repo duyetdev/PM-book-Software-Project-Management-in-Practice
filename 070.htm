@@ -1,0 +1,139 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>Chapter 11. Project Monitoring and Control</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h2
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h2><span lang=EN-GB style='font-size:16.5pt;font-family:Arial'>Chapter 11.
+Project Monitoring and Control</span></h2>
+
+<p class=doctext><span lang=EN-GB>A project plan, no matter how carefully
+prepared, is still only a piece of paper. During project execution, Dr. Project
+Manager must carefully monitor the health of his project-patient and give the
+right doses of corrective-action medicines when necessary. If the right doses
+are given at the right times, the patient survives. But failing to read the
+symptoms properly and failing to give the bitter pills on time can lead to
+further complications and possibly the death of the patient. The following two
+mini-cases illustrate this point.</span></p>
+
+<p class=doctext><span lang=EN-GB>Case A: Shiva was the project manager in
+charge of developing a secure transaction system for a large mutual fund company.
+His team, consisting of many dedicated but junior people, had little experience
+in computer security. The unit testing for the first few modules found a large
+number of defects—much more than expected. Upon analysis, Shiva concluded that
+because of the difficulty of the programs and the inexperience of the
+programmers, the code being produced had more defects. Consequently, he felt,
+more defects would reach the integration and system testing stage, and unless
+something was done, more defects would be delivered. The corrective and
+preventive action Shiva took was to create a separate test team headed by a
+person who had a knack for detail and the right temperament for testing. </span>Through
+discussion with the customer, he was able to expand the system testing phase by
+15 days. Finally, even though there was a delay of 15 days, the delivered
+system exceeded its quality goal by showing fewer than expected defects during
+acceptance testing.</p>
+
+<p class=doctext><span lang=EN-GB>Case B: After the detailed design phase, the
+milestone analysis in Bala's project showed that even though there was no
+schedule slippage, there was an effort overrun of 40%. Because the schedule had
+not slipped, no action was taken. At the next milestone a month later, however,
+the project showed a delay of one week, which Bala explained as the result of
+special circumstances. Eventually, the development was finished one month late.
+To top it off, the number of defects found in acceptance testing was many times
+Bala's quality goal. In the end, his project failed on all three dimensions:
+effort, schedule, and quality. Later analysis showed that he had misunderstood
+the scope of the system and consequently had grossly underestimated the effort.
+If the scope or the schedule had been renegotiated when problems first appeared
+after the design milestone, the final outcome would have been entirely
+different.</span></p>
+
+<p class=doctext><span lang=EN-GB>These mini-cases bring out the two key
+aspects of project monitoring. First, project managers must have visibility
+into the true status of the project, for which the best approach is to
+quantitatively measure the key parameters.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch11lev1sec7#ch11entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch11lev1sec7#ch11entry02"><sup><span
+lang=EN-GB style='color:#003399'>2</span></sup></a><span lang=EN-GB> For
+project managers, the main use of software metrics is to provide this
+visibility.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch11lev1sec7#ch11entry03"><sup><span
+lang=EN-GB style='color:#003399'>3</span></sup></a><span lang=EN-GB> Second,
+the visibility by itself does not solve any problem. Project managers must
+properly interpret the data, and if they find that the project is not moving
+along the planned path, they must apply proper corrective actions to bring it
+back on track. This collection of data to provide feedback about the current
+state and any needed corrective actions forms a fundamental paradigm of project
+management. </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch11&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch11fig01#ch11fig01"><span
+lang=EN-GB style='color:#003399'>Figure 11.1</span></a><span lang=EN-GB>
+illustrates this control cycle.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch11lev1sec7#ch11entry04"><sup><span
+lang=EN-GB style='color:#003399'>4</span></sup></a></p>
+
+<h5 align=center style='text-align:center'><a name=ch11fig01></a><span
+lang=EN-GB style='font-size:10.5pt;font-family:Arial'>Figure 11.1. The project
+monitoring and control cycle</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=252 src="070_files/image001.gif" alt="graphics/11fig01.gif"></p>
+
+<p class=doctext><span lang=EN-GB>This chapter describes how the monitoring and
+control cycle is applied at Infosys. This is the longest chapter in the book
+and covers a range of monitoring activities, including status reporting,
+milestone analysis, event-level control through SPC, process audits, and
+analysis for defect prevention.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

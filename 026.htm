@@ -1,0 +1,805 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>4.3 SCHEDULING</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+span.docemphstrong1
+	{font-weight:bold;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span style='font-size:15.0pt;font-family:Arial'>4.3 SCHEDULING</span></h3>
+
+<p class=doctext>The scheduling activity at Infosys can be broken into two
+subactivities: determining the overall schedule (the project duration) with
+major milestones, and developing the detailed schedule of the various tasks.</p>
+
+<h4><a name=ch04lev2sec8></a><span style='font-size:13.0pt;font-family:Arial'>4.3.1
+Overall Scheduling</span></h4>
+
+<p class=doctext>As discussed earlier in the chapter, you can gain some
+flexibility in determining the schedule by controlling the staffing level, but
+this flexibility is limited. Because of this possible flexibility, building
+strict guidelines for scheduling may not be desirable; strict guidelines
+forfeit the advantage of the flexibility to be passed to the project or the
+customer. Furthermore, the project schedule is usually determined in the larger
+context of business plans, which impose some schedule requirements. Whenever
+possible, you should exploit your schedule flexibility to satisfy such
+requirements. One method is to use scheduling guidelines more for checking the
+feasibility of the schedule than for determining the schedule itself.</p>
+
+<p class=doctext><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04fig02#ch04fig02"><span
+style='color:#003399'>Figure 4.2</span></a> shows the scatter plot of the
+schedule and effort for some of the completed development projects at Infosys,
+along with a nonlinear regression curve fit for the scatter plot.</p>
+
+<h5 align=center style='text-align:center'><a name=ch04fig02></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 4.2. Schedule as a function
+of effort</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=223 src="026_files/image001.gif" alt="graphics/04fig02.gif"></p>
+
+<p class=doctext>The equation of the curve in <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04fig03#ch04fig03"><span
+style='color:#003399'>Figure 4.3</span></a> is</p>
+
+<p class=doclist>schedule = 23.46 (effort)<sup>0.313</sup></p>
+
+<h5 align=center style='text-align:center'><a name=ch04fig03></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 4.3. Manpower ramp-up in a
+typical project</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=295 src="026_files/image002.gif" alt="graphics/04fig03.gif"></p>
+
+<p class=doctext>From the distribution of the points, it is evident that
+schedule is not a function solely of effort. The determined schedule can,
+however, be used as a guideline or check of the schedule's reasonableness,
+which might be decided based on other factors. Similarly, the schedule and
+effort data from similar projects can be used to check the reasonableness of
+any proposed schedule.</p>
+
+<p class=doctext>Project managers often use a rule of thumb, called the <span
+class=docemphasis1>square root check</span>, to check the schedule of
+medium-sized projects. The principle is that the proposed schedule should be
+around the square root of the total effort in person-months; the schedule can
+be met if <img border=0 width=80 height=32 src="026_files/image003.gif"
+alt="graphics/04infig01.gif">resources are assigned to the project. For
+example, if the effort estimate is 50 person-months, a schedule of about 7 to 8
+months will be suitable with about 7 to 8 full-time resources.</p>
+
+<p class=doctext>Because of the relationship between schedule and resources, a
+schedule is accepted only if the head of the business unit to which the project
+belongs agrees to provide the necessary resources. If the necessary resources
+are not available, the schedule must be adjusted. Dependencies of the project
+are also checked before a schedule is accepted. If the project execution
+depends on external factors (such as completion of another project or
+availability of certain software), the schedule must be adjusted to accommodate
+these factors.</p>
+
+<p class=doctext>Once the overall duration of the project is fixed, the schedule
+for the major milestones must be determined. To determine the milestones, you
+must first understand the manpower ramp-up that usually takes place in a
+project. The number of people in a software project tends to follow the
+Rayleigh curve.<a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry09"><sup><span
+style='color:#003399'>9</span></sup></a><sup>,</sup><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry11"><sup><span
+style='color:#003399'>11</span></sup></a> In the beginning and the end, few
+people work on the project; the peak team size (PTS) is reached somewhere near
+the middle of the project. This behavior occurs because only a few people are
+needed in the initial phases of requirements analysis and design. The human
+resources requirement peaks during coding and unit testing. Again, during
+system testing and integration, fewer people are required. In many cases, the
+staffing level does not change very often, but approximations of the Rayleigh
+curve are used: assigning a few people at the start, having the peak team
+during the build phase, and then leaving a few people for integration and
+system testing. If you consider design, build, and test as three major phases
+for which requirements are done, the manpower ramp-up in projects typically
+resembles the function shown in <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04fig03#ch04fig03"><span
+style='color:#003399'>Figure 4.3</span></a></p>
+
+<p class=doctext>At Infosys, this approach for assigning resources is generally
+followed. Fewer people are assigned to the starting and ending phases, with
+maximum people during the build phase. During the build phase, the PTS for the
+project is usually achieved.</p>
+
+<p class=doctext>For ease of scheduling, particularly for smaller projects, all
+the required people are often assigned together around the start of the
+project. This approach can lead to some people being unoccupied at the start
+and toward the end. This slack time is often used for training. Project-level
+training is generally needed in the technology being used and the business
+domain of the project, and this training consumes a fair amount of effort, as
+can be seen in the effort distribution given in the PCB. Similarly, the slack
+time available in the end can be utilized for documentation and other closure
+tasks.</p>
+
+<p class=doctext>The schedule distribution differs from the effort
+distribution. For these three major phases, the percentage of the schedule
+consumed in the build phase is smaller than the percentage of the effort
+consumed because this phase involves more people. Similarly, the percentage of
+the schedule consumed in the design and testing phases exceeds their effort
+percentages. The exact schedule depends on the planned manpower ramp-up. Given
+the effort estimate for a phase, you can determine the duration of the phase
+when you know the manpower ramp-up.</p>
+
+<p class=doctext>Generally speaking, design requires about 40% of the schedule
+(20% for high-level design and 20% for detailed design), build consumes about 40%,
+and integration and system testing consume the remaining 20%. The manpower
+ramp-up typically is around 1:2:1 for design, build, and integration and
+testing, respectively (giving an effort distribution among these phases as
+1:4:1). These types of guidelines provide a check for the milestones, which can
+be set based on other constraints.</p>
+
+<p class=doctext>It is important to recognize that even a person assigned full
+time to a project typically performs other tasks that consume time but do not
+contribute to the project. These tasks include leave, corporate activities,
+general (not project-specific) training, reviews in other projects, and so on.</p>
+
+<h4><a name=ch04lev2sec9></a><span style='font-size:13.0pt;font-family:Arial'>4.3.2
+The Effectiveness of the Approach</span></h4>
+
+<p class=doctext>As with effort estimates, one way of checking the schedule
+estimates is to plot the actual schedule against the estimated schedule and see
+how close the points are to the 45-degree line. If all the points fall very
+close to the 45-degree line, the scheduling approach can be considered
+effective. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04fig04#ch04fig04"><span
+style='color:#003399'>Figure 4.4</span></a> shows this plot for previously
+completed development projects.</p>
+
+<h5 align=center style='text-align:center'><a name=ch04fig04></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 4.4. Actual versus estimated
+schedule</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=325 src="026_files/image004.gif" alt="graphics/04fig04.gif"></p>
+
+<p class=doctext>As you can see, the scheduling approach results in schedules
+that match reasonably well with the actual schedule. Keep in mind, however,
+that other factors (discussed in <a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec2#ch04lev1sec2"><span
+style='color:#003399'>section 4.2</span></a>) may determine whether the
+estimated schedule is met.</p>
+
+<h4><a name=ch04lev2sec10></a><span style='font-size:13.0pt;font-family:Arial'>4.3.3
+Detailed Scheduling</span></h4>
+
+<p class=doctext>Once the milestones and the resources are fixed, it is time to
+set the detailed scheduling. The project manager breaks the tasks into small
+schedulable activities in a hierarchical manner. For each detailed task, the
+project manager estimates the time required to complete it and assigns a
+suitable resource so that the overall schedule is met. In assigning resources,
+she considers various factors such as leave plans of the team members, their
+personal growth plans and career paths, their skill sets and experience,
+training and mentoring needs, the criticality of the task, and the future value
+that the experience acquired in a task may provide to the project.</p>
+
+<p class=doctext>At each level of refinement, the project manager checks the
+effort for the overall task in the detailed schedule against the effort
+estimate. If necessary, she adjusts the detailed estimates. For example, she
+will break down the detailed design phase into tasks such as developing the
+detailed design for each module, review of each detailed design, fixing of
+defects found, and so on, and she may break down each of these further. Then
+she schedules these activities and assigns resources for some duration.</p>
+
+<p class=doctext>If this detailed schedule is not consistent with the overall
+schedule and effort estimate for detailed design, she must change the detailed
+schedule. If she finds that the best detailed schedule cannot match the
+milestone effort and schedule, she must revise the earlier estimates. Thus,
+scheduling is an iterative process.</p>
+
+<p class=doctext>Generally, the project manager refines the tasks to a level so
+that the lowest-level activity can be scheduled to occupy no more than a few
+days from a single resource. She also adds general activities, such as project
+management, coordination, database management, and configuration management.
+These activities have less direct effect on the schedule because they are
+ongoing tasks rather than schedulable activities. Nevertheless, they consume
+resources and hence are included in the project schedule.</p>
+
+<p class=doctext>Rarely does the project manager complete the detailed schedule
+of the entire project all at once. Once the overall schedule is fixed, she may
+do the detailing for a phase only at the start of that phase.</p>
+
+<p class=doctext>For detailed scheduling, project managers frequently use
+Microsoft Project (MSP) or a spreadsheet. For each lowest-level activity, they
+stipulate the effort, duration, start date, end date, and resources. For each
+activity, they also specify the activity code (discussed further in <a
+href="http:// /?xmlid=0-201-73721-3/ch07#ch07"><span
+style='color:#003399'>Chapter 7</span></a>), the program code, and the module
+code. They may also specify dependencies between activities, due either to an
+inherent dependency (for example, you can conduct a unit test plan for a
+program only after it has been coded) or to a resource-related dependency (the
+same resource is assigned two tasks).</p>
+
+<p class=doctext>A detailed project schedule is never static. Changes may be
+needed because the actual progress in the project may be different from what
+was planned, because newer tasks are added in response to change requests, or
+because of other unforeseen situations. Changes are done as and when the need
+arises.</p>
+
+<p class=doctext>The final schedule, as recorded in MSP or some other tool, is
+the most &quot;live&quot; project plan document. During the project, if plans
+must be changed and additional activities must be done, after the decision is
+taken, any changes are reflected in the detailed schedule. Hence, the detailed
+schedule becomes the main document that tracks the activities and schedule. The
+detailed schedule is also a key input in project monitoring, which is discussed
+in <a href="http:// /?xmlid=0-201-73721-3/ch11#ch11"><span
+style='color:#003399'>Chapter 11</span></a>.</p>
+
+<h4><a name=ch04lev2sec11></a><span style='font-size:13.0pt;font-family:Arial'>4.3.4
+The Schedule of the ACIC Project</span></h4>
+
+<p class=doctext>Let's consider the example of the ACIC project. (See my
+earlier book for the scheduling of a different case study.<a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec5#ch04entry10"><sup><span
+style='color:#003399'>10</span></sup></a>) As discussed earlier, the effort
+estimates for the ACIC project were 501 person-days, or about 24 person-months.
+The customer gave approximately 5.5 months to finish the project (from May 15
+to November 3). Because this is more than the square root of effort in
+person-months, and because requirement gathering had to be finished before the
+project started, this schedule was accepted. (The resource requirement for this
+schedule was also estimated and is given in the project management plan in <a
+href="http:// /?xmlid=0-201-73721-3/ch08#ch08"><span
+style='color:#003399'>Chapter 8</span></a>.)</p>
+
+<p class=doctext>The milestones are determined by using the effort estimate for
+the phase and an estimate of the number of resources that can be fully occupied
+in this phase. In the ACIC project, the project manager listed the major
+activities in each phase and assigned them to resources. From this assignment,
+he determined the overall schedule and effort for the phase. If the total
+effort for the phase did not match the effort estimate, he revised the
+assignment until the total effort matched the effort estimate. Then the overall
+schedule, as obtained from the assignment of activities, was taken as the
+schedule for the phase. (The milestones are specified in the project management
+plan given in <a href="http:// /?xmlid=0-201-73721-3/ch08#ch08"><span
+style='color:#003399'>Chapter 8</span></a>.) <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04table08#ch04table08"><span
+style='color:#003399'>Table 4.8</span></a> shows the high-level schedule of the
+ACIC project. This schedule is obtained automatically from the final detailed
+schedule of the project.</p>
+
+<p class=doctext>In the table, the task ID is the sequence number assigned in
+the MSP. The task IDs show that the total number of tasks in the final schedule
+was more than 330 and that each of these high-level tasks had many schedulable
+activities under it. The first task was the overall project, with a duration of
+about 140 days and an effort of 560 person-days. (This schedule is from the
+final schedule of the project, which incorporated the changes to be done; the
+final two tasks in this table are the two major changes.)</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=6 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch04table08></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 4.8. High-level Schedule for
+  the ACIC Project</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Task ID</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Task</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Duration (days)</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Work (person-days)</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Start Date</span></span></p>
+  </td>
+  <td valign=bottom style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>End Date</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>ACIC development schedule</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>139.56</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>559.93</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>4/3/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>11/3/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Project initiation activities</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>33.78</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>24.2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>5/4/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>6/23/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>29</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Regular activities</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>87.11</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>35.13</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>6/5/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>10/16/00</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>74</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Training</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>95.11</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>49.37</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>5/8/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>9/29/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>99</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Organization activities</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>76.89</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>12.9</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>5/22/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>9/15/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>104</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Knowledge sharing initiative</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>78.22</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>19.56</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>6/2/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>9/30/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>110</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Inception phase activities</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>26.67</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>22.67</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>4/3/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>5/12/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>114</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Elaboration Iteration 1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>27.56</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>55.16</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>5/15/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>6/23/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>157</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Elaboration Iteration 2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>8.89</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>35.88</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>6/26/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>7/7/00</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>198</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Construction Iteration 1</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>8.89</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>24.63</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>7/10/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>7/21/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>228</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Construction Iteration 2</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>6.22</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>28.22</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>7/20/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>7/28/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>256</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Construction Iteration 3</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>6.22</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>27.03</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>7/31/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>8/8/00</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>290</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Transition phase activities</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>56</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>179.62</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>8/9/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>11/3/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>323</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Window resized release of 2.0 code</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>26.67</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>39.11</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>8/14/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>9/22/00 </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>331</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Back-end mainframe work for 3.0</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>4.44</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>6.44</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>8/14/00</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>8/18/00</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span lang=EN-GB>This high-level schedule is not suitable for
+assigning resources and detailed planning. During detailed scheduling, these
+tasks are broken into schedulable activities. In this way, the schedule also
+becomes a checklist of tasks for the project. As mentioned before, this
+&quot;exploding&quot; of top-level activities is not done fully at the start
+but rather takes place many times during the project.</span></p>
+
+<p class=doctext><a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec4#ch04table09"><span
+lang=EN-GB style='color:#003399'>Table 4.9</span></a><span lang=EN-GB> shows
+part of the detailed schedule of the construction-iteration 1 phase of the ACIC
+project. For each activity, the table specifies the module, the program, and
+the activity code, along with the duration, effort, and so on. The Module and
+Program columns represent the module and program on which work is being done. Activity
+Code represents the activity being performed. (The standard organization-wide
+activity codes are discussed further in </span><a
+href="http:// /?xmlid=0-201-73721-3/ch07#ch07"><span
+lang=EN-GB style='color:#003399'>Chapter 7</span></a><span lang=EN-GB>.)</span></p>
+
+<p class=doctext><span lang=EN-GB>Sometimes, the <span class=docemphasis1>predecessors</span>
+of the activity (the activities upon which the task depends) are also
+specified, although they are omitted here. This information helps in
+determining the critical path and the critical resources.</span></p>
+
+<p class=doctext><span lang=EN-GB>For each task, how much is completed is given
+in the % Complete column. </span>This information is used for activity
+tracking, which is discussed further in <a
+href="http:// /?xmlid=0-201-73721-3/ch11#ch11"><span
+style='color:#003399'>Chapter 11</span></a>. The detailed schedule also
+specifies the resource to which the task is assigned.</p>
+
+<p class=doctext>The activity number has been omitted from <a
+href="http:// /?xmlid=0-201-73721-3/ch04lev1sec4#ch04table09"><span
+style='color:#003399'>Table 4.9</span></a>. As <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch04lev1sec3&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch04table08#ch04table08"><span
+style='color:#003399'>Table 4.8</span></a> indicated, there were more than 330
+line items in the final schedule of the ACIC project, the lowest-level tasks
+being the schedulable tasks.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>9.1 CONCEPTS IN CONFIGURATION MANAGEMENT</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>9.1 CONCEPTS IN
+CONFIGURATION MANAGEMENT</span></h3>
+
+<p class=doctext><span lang=EN-GB>CM is essential to satisfy one of the basic
+objectives of a project: delivery of a high-quality software product to the
+client. What is this &quot;software&quot; that is delivered? At the least, it
+contains the various source or object files that make up the source or object
+code, scripts to build the working system from these files, and associated
+documentation. During the project, the files change, leading to the creation of
+different versions. In this situation, how does a program manager ensure that
+the appropriate versions of source code files are combined without missing any
+source, and that the correct versions of the documents, consistent with the
+final source, are sent? All this is ensured through proper CM.</span></p>
+
+<p class=doctext><span lang=EN-GB>A primary objective of CM is to manage the
+evolving configuration of the software system.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry02"><sup><span
+lang=EN-GB style='color:#003399'>2</span></sup></a><span lang=EN-GB> In a
+project, a program's evolution takes it through many states. At the beginning,
+when a programmer develops it, the program is under development (or
+&quot;private&quot;). Once the programmer is satisfied with the program, it
+moves into the &quot;ready for unit testing&quot; state. Only when the program
+reaches this state can it be unit tested. After it has been unit tested, the
+programmer must fix any defects found. If the unit testing succeeds, however,
+then the program's state changes to &quot;ready for system testing.&quot; Only
+when all programs reach this state can system testing commence. Again, if
+defects are found during system testing, the state of a program reverts to
+&quot;private&quot;; otherwise, it moves to &quot;ready for acceptance
+testing.&quot; If the acceptance testing succeeds, the state of all programs
+changes to &quot;ready for release,&quot; implying that they can now be
+released for &quot;production use.&quot; Once a program is released and is in
+production use, all the programs (and associated documentation) move to the
+&quot;baselined&quot; state, which represents the state of the production
+system.</span></p>
+
+<p class=doctext><span lang=EN-GB>In addition to the changes that take place
+during the normal course of software development, requirement change requests
+may be submitted, and their implementation may alter programs. When a project
+has a large number of items that can be changed, developers may be called on to
+take many actions; these actions can be performed only if proper support is
+available from the CM process.</span></p>
+
+<p class=doctext><span lang=EN-GB>To better understand CM, let's consider the
+kinds of CM functionality projects require. Although these requirements can
+depend on the nature of the project and the exact situation, some general
+functions can be specified. Following is a list of some of these functions
+along with scenarios where they might be needed. These functions are more
+detailed than the CM functions defined in Humphrey.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry03"><sup><span
+style='color:#003399'>3</span></sup></a></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Give the states of the programs. You need this
+information to decide when to start testing or when to release the software.</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Give the latest version of a program. </span>Suppose
+that a program must be modified. Clearly, the modification must be carried out
+in the latest version; otherwise, earlier changes may be lost.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Handle concurrent update requests. Two programmers, in response
+to two different change requests, might change the same program concurrently.
+One of the changes could potentially overwrite the other change. Avoiding such
+a situation requires access control so that only one person can make changes to
+a program at a time. If multiple parallel changes are allowed, reconciliation
+procedures should be implemented to ensure that all changes are reflected in
+the final version.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Undo a program change. A change is made to a program (to
+implement a change request), but later a need arises to reverse this change
+request.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Prevent unauthorized changes or deletions. A programmer may
+decide to change some programs, only to discover that the change has adverse
+side effects. Access control mechanisms are needed to disallow unapproved
+changes.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Provide traceability between requirement change requests and
+program changes. Suppose a requirement change request dictates that three programs
+be modified, and these modifications have been assigned to three team members.
+How does a project manager ensure that this change request has been properly
+implemented—that is, that all programs have been changed and that the changed
+programs have gone through their life cycle and are in a &quot;ready for
+release&quot; state? Answering this question requires a mechanism to track
+change requests that can specify all programs to be changed as well as the
+state of each program.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Undo a requirement change. A requirement change request that was
+implemented (by changing many programs) may later need to be undone (perhaps
+because the users do not like the new features).</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Show associated changes. Suppose a bug is found in a program, and
+it is suspected that this bug came from the implementation of a change request.
+It is desirable to review all changes made as a result of that change request.</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Gather all sources, documents, and other information for the
+current system. As a result of file corruption or a system crash, it might be
+necessary to recover all files. Similarly, a change to an existing system (one
+that is in operation) might be needed, making it essential to obtain all source
+files and documents that represent the current system.</p>
+
+<p class=doctext>These are some of the more frequently occurring scenarios in a
+project that require support from the CM process. Furthermore, if multiple
+versions of a single software product coexist, each using a different version
+of the programs, other situations related to changes might come up that require
+the CM to have additional functionality (for example, handling variance<a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry04"><sup><span
+style='color:#003399'>4</span></sup></a>). Still, the main purpose of CM is to
+provide mechanisms that handle the type of scenarios in the preceding list.
+These mechanisms include the following:</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Conventions for naming and organization of files</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Version control</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Change request traceability</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Access control</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Reconciliation procedures</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Modification login programs</p>
+
+<p class=doctext><span lang=EN-GB>Naming program files (and document files)
+according to a standard convention and keeping the files in specific
+directories help in finding a desired file quickly. Proper naming (for example,
+by using standard extensions) also helps developers to readily understand the
+nature of file contents without looking at the files. In addition, segregating
+programs by their states into separate directories helps developers to identify
+the program state easily.</span></p>
+
+<p class=doctext><span lang=EN-GB>Version control is a key issue for CM,</span><a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry02"><sup><span
+lang=EN-GB style='color:#003399'>2</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry04"><sup><span
+lang=EN-GB style='color:#003399'>4</span></sup></a><span lang=EN-GB> and many
+tools are available to help manage this task. Version control helps preserve
+older versions of the programs whenever they are changed. Without such a
+mechanism, the system cannot support many of the required CM functions.</span></p>
+
+<p class=doctext><span lang=EN-GB>A change request traceability mechanism
+provides mapping from a requirement change request to subsequent changes in the
+programs, and that helps in managing requirement changes. To trace a change
+back to the change request, the modification log is useful.</span></p>
+
+<p class=doctext><span lang=EN-GB>Access control mechanisms ensure that only
+authorized people can modify certain files and that only one person can modify
+a file at any given time. Reconciliation procedures specify how two changes
+made independently to a program can be merged to create a new version that
+reflects both.</span></p>
+
+<p class=doctext><span lang=EN-GB>If these mechanisms are provided, the
+scenarios given earlier can be handled satisfactorily. Some of these scenarios
+necessitate the use of more than one mechanism. For example, undoing a
+requirement change involves a mechanism to show the traceability of a requirement
+change to subsequent changes in programs, as well as a version control
+mechanism to actually undo the changes.</span></p>
+
+<p class=doctext><span lang=EN-GB>Some CM mechanisms may be supported by a
+tool, whereas others may require that the users perform them explicitly. For
+example, version control may be carried out by a tool, but capturing the state
+of a program may require the programmer to explicitly maintain this
+information. The CM process defines all steps needed to implement such
+mechanisms and explains how these mechanisms are to be used in a project.</span></p>
+
+<p class=doctext><span lang=EN-GB>The discussion so far has focused on
+programs. The documents that are produced in a project (such as requirements
+documents, design documents, and plans) also need configuration management. During
+the normal course of a project, a document passes through three states:
+&quot;under development,&quot; &quot;under review,&quot; and
+&quot;baselined.&quot; The state transition is straightforward and similar to
+the one proposed in Whitgift.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch09lev1sec5#ch09entry04"><sup><span
+lang=EN-GB style='color:#003399'>4</span></sup></a><span lang=EN-GB> The CM
+process must also implement the state diagram for documents.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

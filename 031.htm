@@ -1,0 +1,256 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>5.2 QUANTITATIVE QUALITY MANAGEMENT PLANNING</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>5.2
+QUANTITATIVE QUALITY MANAGEMENT PLANNING</span></h3>
+
+<p class=doctext><span lang=EN-GB>Now let's consider how project managers at
+Infosys use the defect prediction approach for quantitatively managing software
+quality. (As discussed in </span><a
+href="http:// /?xmlid=0-201-73721-3/ch10#ch10"><span
+lang=EN-GB style='color:#003399'>Chapters 10</span></a><span lang=EN-GB> and </span><a
+href="http:// /?xmlid=0-201-73721-3/ch11#ch11"><span
+lang=EN-GB style='color:#003399'>11</span></a><span lang=EN-GB>, projects also
+use SPC at the task level.) As discussed earlier, when you plan for
+quantitatively managing quality for a project, you face two key issues: first,
+setting the quality goal, and second, predicting defect levels at intermediate
+milestones that can be used for quantitatively monitoring progress toward the
+goal. In addition, if the project goals exceed the capability of existing
+processes, the project manager must plan suitable enhancements to the quality
+process. Let's look at how project managers perform these three tasks at
+Infosys.</span></p>
+
+<h4><a name=ch05lev2sec4></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>5.2.1 Setting the Quality Goal</span></h4>
+
+<p class=doctext><span lang=EN-GB>Project managers at Infosys set quality goals
+during the planning stages. The <span class=docemphasis1>quality goal</span>
+for a project generally is the expected number of defects found during
+acceptance testing. You can set the quality goal according to what is <span
+class=docemphasis1>computed</span> using past data; in this case, it is implied
+that you will use the standard process, and hence standard quality results will
+be expected. Two primary sources can be used for setting the quality goal: past
+data from similar projects and data from the PCB.</span></p>
+
+<p class=doctext><span lang=EN-GB>If you use data from similar projects, you
+can estimate the number of defects found during acceptance testing of the
+current project as the product of the number of defects found during acceptance
+testing of the similar projects and the ratio of the estimated effort for this
+project and the total effort of the similar projects.</span></p>
+
+<p class=doctext><span lang=EN-GB>If you use data from the PCB, you can use any
+of several methods to compute this value. If you set the quality target as the
+number of defects per function point, you estimate size in function points (as
+discussed earlier), and the expected number of defects is the product of the
+quality figure and the estimated size. </span>The following sequence of steps
+is used:</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><a
+name=ch05pr01></a><span lang=EN-GB>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=1>Set the quality goal in terms of
+defects per FP.</span></p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=2>Estimate the expected productivity
+level for the project.</span></p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=3>Estimate the size in FP as
+(expected productivity * estimated effort).</span></p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=4>Estimate the number of AT defects
+as (quality goal * estimated size).</span></p>
+
+</span>
+
+<p class=doctext><span lang=EN-GB>Instead of setting the quality goal in terms
+of defects per function point, sometimes it is more useful to set the target in
+terms of the process's defect removal efficiency. In this situation, you can
+determine the number of defects to be expected during acceptance testing from
+the defect injection rate, the target in-process removal efficiency, and the
+estimated size. </span>The sequence of steps is as follows:</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><a
+name=ch05pr02></a><span lang=EN-GB>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=1>Set the quality goal in terms of
+defect removal efficiency.</span></p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=2>Estimate the total number of
+defects from the defect injection rate and the estimated size, or by the effort-based
+defect injection rate and the effort estimate.</span></p>
+
+</span>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB><span value=3>Estimate the number of AT defects
+from the total number of defects and the quality goal.</span></p>
+
+</span>
+
+<h4><a name=ch05lev2sec5></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>5.2.2 Estimating Defects for Other Stages</span></h4>
+
+<p class=doctext><span lang=EN-GB>Once the project's quality goal is set, you
+should estimate defect levels for the various quality control activities so
+that you can quantitatively control the quality. The approach for estimating
+defect levels for other phases is similar to the approach for estimating the
+defects in acceptance testing. From the estimate of the total number of defects
+that will be introduced, you forecast the defect levels for the various testing
+stages by using the percentage distribution of defects as given in the PCB. Alternatively,
+you can forecast defects for the various phases based on past data from similar
+projects.</span></p>
+
+<p class=doctext><span lang=EN-GB>At a minimum, you estimate the defects
+uncovered in system and integration testing. System testing is singled out
+because it is the major testing activity and the final QC activity performed
+before the software is submitted to the customer. Estimating defects for system
+testing and then comparing that number to the actual number of defects found
+will help you determine whether the system testing has been sufficient and the
+software is ready for release.</span></p>
+
+<p class=doctext><span lang=EN-GB>For reviews, instead of making an explicit
+prediction of the defect levels, you can use norms given in the review baseline
+to evaluate the effectiveness of a review immediately after it has been
+executed. These norms are determined based on SPC and allow you to evaluate the
+effectiveness of each review rather than evaluating the effectiveness of a
+phase. </span><a href="http:// /?xmlid=0-201-73721-3/ch10#ch10"><span
+lang=EN-GB style='color:#003399'>Chapter 10</span></a><span lang=EN-GB>
+discusses quantitatively managing reviews in more detail. Similarly, norms are
+also provided for unit testing. Monitoring of unit testing is discussed further
+in </span><a href="http:// /?xmlid=0-201-73721-3/ch11#ch11"><span
+lang=EN-GB style='color:#003399'>Chapter 11</span></a><span lang=EN-GB>.</span></p>
+
+<h4><a name=ch05lev2sec6></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>5.2.3 Quality Process Planning</span></h4>
+
+<p class=doctext><span lang=EN-GB>You can set a quality goal that is higher (or
+lower) than the quality level of a similar project, or you can aim for the
+levels achieved by the standard process. You can then determine the expected
+number of defects for the higher goal by using the quality goal set for the
+project. Alternatively, after determining the expected number of AT defects,
+you can set the quality goal by choosing a different number of AT defects as
+the target.</span></p>
+
+<p class=doctext><span lang=EN-GB>If the quality goal is based on the data from
+similar projects and the goal is higher than that of the similar projects, it
+is unreasonable to expect that following the same process as used in the
+earlier projects will achieve the higher quality goal. If the same process is
+followed, the reasonable expectation is that similar quality levels will be
+achieved. Hence, if a higher quality level is desired, the process must be
+suitably upgraded. Similarly, if the quality goal is set higher than the
+quality levels given in the PCB, it is unreasonable to expect that following
+the standard process will lead to the higher quality level. Hence, a new
+strategy will be needed—generally, a combination of training, prototyping,
+testing, reviews, and, in particular, defect prevention. This strategy is
+explicitly stated in the quality plan for the project. Here we discuss testing
+and reviews, the two main quality control processes. Defect prevention planning
+is discussed later in this chapter.</span></p>
+
+<p class=doctext><span lang=EN-GB>Different levels of testing are deployed in a
+project. You can modify the overall testing by adding or deleting some testing
+steps (these steps show up as process deviations in the project management
+plan). In addition, you can enhance the approach to testing by, for example,
+performing a group review of the test plans and test results.</span></p>
+
+<p class=doctext><span lang=EN-GB>The choice of work products to be reviewed is
+generally made by the project manager. The set of documents reviewed may, in
+fact, change from project to project. It can be adjusted according to the
+quality goal. If a higher quality level is set, it is likely to be achieved by
+having a larger number of programs group reviewed, by including a group review
+of the test plans, by having a more critical review of detailed designs, and so
+on. If this approach is selected, it is mentioned as the strategy for meeting
+the quality goal. To further elaborate on the implications of this type of
+strategy, you specify in the project plan all documents that will be reviewed
+and the nature of those reviews.</span></p>
+
+<p class=doctext><span lang=EN-GB>You can use the data in the process
+capability baseline to estimate the effects of the proposed process changes on
+the effort and schedule planned for the project. Frequently, once the process
+changes are identified, their effects are predicted based on past experience. This
+tactic is usually acceptable because the changes are generally minor.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

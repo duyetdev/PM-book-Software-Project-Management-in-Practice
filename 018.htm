@@ -1,0 +1,582 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>3.1 THE INFOSYS DEVELOPMENT PROCESS</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+p.doclist, li.doclist, div.doclist
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+span.docemphstrong1
+	{font-weight:bold;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>3.1 THE INFOSYS
+DEVELOPMENT PROCESS</span></h3>
+
+<p class=doctext><span lang=EN-GB>During project planning, a project manager
+must decide what process should be used for engineering the software. This is a
+crucial issue because much of the engineering activity will be governed by this
+decision. It is like going on a long driving trip—the planned route determines
+the course you will drive.</span></p>
+
+<p class=doctext><span lang=EN-GB>Several process models for software
+development exist. The most common ones include the waterfall model (a
+description of this model and its limitations can be found in Boehm's <span
+class=docemphasis1>Software Engineering Economics</span> </span><a
+href="http:// /?xmlid=0-201-73721-3/ch03lev1sec5#ch03entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><span lang=EN-GB>),
+iterative enhancement,</span><a
+href="http:// /?xmlid=0-201-73721-3/ch03lev1sec5#ch03entry02"><sup><span
+lang=EN-GB style='color:#003399'>2</span></sup></a><span lang=EN-GB>
+prototyping,</span><a
+href="http:// /?xmlid=0-201-73721-3/ch03lev1sec5#ch03entry03"><sup><span
+lang=EN-GB style='color:#003399'>3</span></sup></a><span lang=EN-GB> and
+spiral.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch03lev1sec5#ch03entry04"><sup><span
+lang=EN-GB style='color:#003399'>4</span></sup></a><span lang=EN-GB> The most
+widely used model is the waterfall model, which organizes the phases in a
+linear sequence, although most implementations adapt this model to minimize its
+shortcomings.</span></p>
+
+<p class=doctext><span lang=EN-GB>At a macro level, a standard process can give
+the optimum organization of phases for a class of projects and makes a good
+starting point for process definition. However, a standard process cannot be
+suitable for all situations; the best process may be a variation on a standard
+process. Hence, to decide which process to use, the project manager must select
+the base process and also decide how it must be tailored to obtain a process
+that will suit the project. The rest of this section discusses the standard
+development process used at Infosys and explains how it is tailored by project
+managers.</span></p>
+
+<h4><a name=ch03lev2sec1></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>3.1.1 The Standard Process</span></h4>
+
+<p class=doctext><span lang=EN-GB>The standard development process used at
+Infosys resembles the waterfall model, although the traditional phases have
+been broken into smaller phases, or stages, to allow parallel execution of some
+phases. For example, planning for system testing is defined as a separate phase
+from system testing itself, a practice that allows teams to conduct the system
+test planning phase in parallel with coding, even though system testing takes
+place only after coding is finished.</span></p>
+
+<p class=doctext><span lang=EN-GB>The phases in the process include
+requirements analysis, high-level design, detailed design, build, unit testing,
+integration planning, integration, system test planning, system testing,
+documentation, acceptance and installation, and warranty support. </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch03lev1sec1&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch03fig01#ch03fig01"><span
+lang=EN-GB style='color:#003399'>Figure 3.1</span></a><span lang=EN-GB> depicts
+the phases and the dependencies between them. Details of the stages are omitted
+here, although they are described in my earlier book.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch03lev1sec5#ch03entry05"><sup><span
+style='color:#003399'>5</span></sup></a></p>
+
+<h5 align=center style='text-align:center'><a name=ch03fig01></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 3.1. The Infosys development
+process</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=234 src="018_files/image001.gif" alt="graphics/03fig01.gif"></p>
+
+<p class=doctext><span lang=EN-GB>The formal description of this process
+specifies the entry and exit criteria, inputs and outputs, participants,
+activities, and other information for each phase (stage). The process
+descriptions are generally brief, specifying the list of activities to be
+undertaken in that phase.</span></p>
+
+<p class=doctext><span lang=EN-GB>This overall process remains the same even
+for a project using an object-oriented approach, although some of the phases
+are done differently in such a project. The difference lies mostly in the
+analysis and design phases, although the guidelines and standards for some of
+the later phases are also different.</span></p>
+
+<p class=doctext><span lang=EN-GB>This basic process is also used by projects
+that do iterative development or prototyping or perform only some stages of the
+life cycle. In these situations this standard process is adjusted to suit the
+project. These adjustments are done through process tailoring, which is
+discussed next.</span></p>
+
+<h4><a name=ch03lev2sec2></a><span lang=EN-GB style='font-size:13.0pt;
+font-family:Arial'>3.1.2 Process Tailoring</span></h4>
+
+<p class=doctext><span lang=EN-GB>No defined process—whether an organization's
+standard process or the process used in a previous project—will apply to all
+situations and all projects. A defined process must be tailored to suit the
+needs of the current project.</span></p>
+
+<p class=doctext><span class=docemphasis1><span lang=EN-GB>Tailoring</span></span><span
+lang=EN-GB> is the process of adjusting a previously defined process of an
+organization to obtain a process that is suitable for the particular business
+or technical needs of a project.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch03lev1sec5#ch03entry05"><sup><span
+lang=EN-GB style='color:#003399'>5</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch03lev1sec5#ch03entry06"><sup><span
+lang=EN-GB style='color:#003399'>6</span></sup></a><span lang=EN-GB> You can
+view tailoring as adding, deleting, or modifying the activities of a process so
+that the resulting process is better suited to achieving the project's goals.</span></p>
+
+<p class=doctext><span lang=EN-GB>Uncontrolled tailoring effectively implies
+creating a process from scratch. To allow effective reuse of previously defined
+processes, tailoring guidelines are provided. These guidelines define the
+conditions and the types of changes that should be made to a standard process. In
+essence, they define a set of <span class=docemphasis1>permitted</span> <span
+class=docemphasis1>deviations</span> to the standard process in the hope that
+the optimal process can be defined for a project. </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch03lev1sec1&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch03fig02#ch03fig02"><span
+style='color:#003399'>Figure 3.2</span></a> illustrates the role of tailoring
+guidelines.</p>
+
+<h5 align=center style='text-align:center'><a name=ch03fig02></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 3.2. Process tailoring</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=244 src="018_files/image002.gif" alt="graphics/03fig02.gif"></p>
+
+<p class=doctext><span lang=EN-GB>To illustrate the need for tailoring, let's
+take an activity in the build phase of the development process—<span
+class=docemphasis1>Do code review.</span> Code review adds a great deal of
+value in many cases, but sometimes its added value is not commensurate with the
+effort required. Also, the review could be done by either a group (following
+the group review procedure) or by one person. The standard development process
+does not specify how code review should be performed. Tailoring guidelines can
+help a project manager by advising that the activity <span class=docemphasis1>Do
+code review</span> be performed only for certain types of programs (such as
+complex programs or external interfaces) and by suggesting the optimal form of
+the review (group review or one-person review).</span></p>
+
+<p class=doctext><span lang=EN-GB>The Infosys tailoring approach is similar to
+the table-based approach proposed by Ginsberg and Quinn,</span><a
+href="http:// /?xmlid=0-201-73721-3/ch03lev1sec5#ch03entry07"><sup><span
+lang=EN-GB style='color:#003399'>7</span></sup></a><span lang=EN-GB> in which
+the project manager specifies the process element, the tailorable attribute,
+the options for each attribute, and the reasons for selecting a particular
+option. A project manager performs tailoring at two levels: summary and
+detailed.</span></p>
+
+<h5><a name=ch03lev3sec1></a><span lang=EN-GB style='font-size:10.5pt;
+font-family:Arial'>Summary-Level Tailoring</span></h5>
+
+<p class=doctext><span lang=EN-GB>In <span class=docemphasis1>summary-level
+tailoring</span>, depending on the project characteristics, the project manager
+applies overall guidelines for tailoring the standard process. That is, it
+provides some general rules regarding certain types of detailed activities. To
+perform this step, the project manager first identifies certain characteristics
+of the project. For development projects, the following characteristics are
+used for tailoring:</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>Experience and skill level of the team and the
+project manager</span></p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Peak team size</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Clarity of the requirements</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Project duration</p>
+
+<p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Application criticality</p>
+
+<p class=doctext>The experience level of the team is considered high if a
+majority of team members have more than two years of experience with the
+technology being deployed in the project; otherwise, it is considered low.
+Application criticality is considered high if the effect of the application on
+a customer's business or Infosys's business is significant; otherwise, it is
+low. Duration of the project is considered particularly short if the project
+must be delivered in less than three months.</p>
+
+<p class=doctext>Summary tailoring guidelines are provided for different values
+of these characteristics. The summary guidelines are generally review-related,
+effort-related, schedule-related, resources-related, or formality-related.
+Review-related guidelines typically specify when reviews should be done and
+what type of review should take place. Similarly, the effort-related guidelines
+suggest steps to be taken for the project that may affect the effort. These
+general guidelines set the context for detailed process tailoring and defining
+a suitable process for the project.</p>
+
+<h5><a name=ch03lev3sec2></a><span style='font-size:10.5pt;font-family:Arial'>Detailed
+Tailoring</span></h5>
+
+<p class=doctext><span class=docemphasis1>Detailed tailoring</span> covers execution
+of activities, their review, and documentation needs. Tailoring guidelines may
+specify an activity as optional, in which case the project manager can decide
+whether or not to execute the activity. Similarly, preparation of some
+documents may be optional, in which case the project manager decides whether or
+not the project needs the document. For review, the general alternatives are <span
+class=docemphasis1>Do group review, Do one-person review,</span> or <span
+class=docemphasis1>Do not review</span>. In addition, a project manager may add
+some new activities or may repeat some activities.</p>
+
+<p class=doctext>When detailed tailoring is finished, the sequence of
+activities to be performed in the process for the project is defined. These
+definitions are then used to plan and schedule activities and form the basis of
+project execution. The tailoring performed is highlighted in the project plan,
+so the process definition and tailoring also are reviewed when the plan is
+reviewed.</p>
+
+<h4><a name=ch03lev2sec3></a><span style='font-size:13.0pt;font-family:Arial'>3.1.3
+Example: Tailoring for Short-Duration Projects</span></h4>
+
+<p class=doctext>We illustrate the concept of tailoring by showing the summary-level
+tailoring for short-duration projects. Infosys observed that the duration of
+software projects has decreased over the years, and there is increased demand
+for projects of very short duration. Clearly, such projects require processes
+to be tailored to allow maximum parallelism and very tight project monitoring
+and control. The process tailoring depends on the clarity of the requirements,
+the experience level of the team or the project leader, the size of the team,
+and so on. <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch03lev1sec1&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch03table01#ch03table01"><span
+style='color:#003399'>Table 3.1</span></a> shows tailoring guidelines prepared
+by project managers of such projects for one combination of values.</p>
+
+<p class=doctext>Because the shortness of the schedule is the main
+characteristic, schedule-related guidelines suggest the use of a technique
+called timeboxing and mini-milestones. In <span class=docemphasis1>timeboxing</span>,
+several-week duration cycles are planned, and a working system is delivered
+after each cycle. To keep tight control on the timeboxes, <span
+class=docemphasis1>mini-milestones—</span>milestones within the cycle—are also
+set. At mini-milestones, a limited milestone analysis (see <a
+href="http:// /?xmlid=0-201-73721-3/ch11#ch11"><span
+style='color:#003399'>Chapter 11</span></a>) is done. Most of the other
+guidelines are self-explanatory.</p>
+
+<p class=doctext>A project manager who must execute a short-duration project
+can use these guidelines to tailor the development process. For example, the
+project manager may plan to use iterative delivery with short iterations,
+perform limited milestone analysis but more frequently, define a change
+management process that defers most change requests to the next iteration, and
+so on. In addition, while performing detailed tailoring to define the project's
+process, the project manager may reduce the documentation for each cycle by,
+for example, reducing the scope of the templates used for reporting status.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td colspan=3 style='border:none;padding:.75pt .75pt .75pt .75pt'>
+  <h5 align=center style='text-align:center'><a name=ch03table01></a><span
+  style='font-size:10.5pt;font-family:Arial'>Table 3.1. Tailoring Guidelines
+  for a Short-Duration Project</span></h5>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Values</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Summary Guidelines</span></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span class=docemphstrong1><span style='font-size:10.5pt;
+  font-family:Arial;color:black'>Why?</span></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Size of team &gt;= 5, duration &lt; 3 months, low requirements
+  clarity, new technology, experienced project leader</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Scheduling-related</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Plan for mini-milestones</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext>Identifies problems very early and gives better control of
+  project.</p>
+  <p class=doctext>Schedule-related risk is decreased because the visibility
+  into the schedule is more frequent.</p>
+  <p class=doctext>Effort slippage is likely to be controlled early in the
+  project.</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Try to timebox the deliverables</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext>Schedule is potentially reduced because it ensures
+  deliverable system at fixed intervals and discourages feature creep.</p>
+  <p class=doctext>Schedule-related risk is reduced.</p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Effort-related</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Apply appropriate adjustment factors to base estimate as
+  defined in estimation guidelines.</p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>All project constraints are accommodated in effort estimate to
+  project a realistic timeline.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Give optimistic, pessimistic, and probable
+  estimates.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Reduces risk related to improper estimation and
+  &quot;quick&quot; commitments.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Revise and renegotiate estimates at the end of
+  design stage.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Resource allocation-related</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Assign skilled resources for the tasks.</span></p>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Get expert help for performance- related
+  issues.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext><span lang=EN-GB>Productivity will improve.</span></p>
+  <p class=doctext><span lang=EN-GB>Schedule-related risk decreases.</span></p>
+  <p class=doctext><span lang=EN-GB>Rework and delays due to performance tuning
+  are minimized.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>Formality-related</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Identify all stakeholders and their objectives
+  and prioritize them.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doctext><span lang=EN-GB>Helps in focusing on clear objectives.</span></p>
+  <p class=doctext><span lang=EN-GB>Reduces schedule-related risk because the
+  important success factors are identified, agreed to, and addressed.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Regularly report status on risk mitigation
+  activities to senior management.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Schedule-related risk is reduced because mitigation is done
+  proactively.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>&nbsp;</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=doclist style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=EN-GB style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-GB>Define formal requirement change management
+  process and educate team to strictly follow it.</span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:10.5pt;font-family:Arial;
+  color:black'>Minimizes impact of requirement changes on the schedule.</span></p>
+  </td>
+ </tr>
+ </COLGROUP>
+</table>
+
+<p class=doctext><span lang=EN-GB>The summary guidelines shown in </span><a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch03lev1sec1&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch03table01#ch03table01"><span
+lang=EN-GB style='color:#003399'>Table 3.1</span></a><span lang=EN-GB> are for
+a project whose duration is less than three months, has a peak team size of
+more than five, is working with new technology, and has an experienced project
+leader. During detailed tailoring, the project manager chooses options based on
+the summary guidelines and suitability to the project. If, however, the
+tailoring guidelines are not sufficient to allow you to select the right
+process for the project, you may have to modify the process beyond what was
+allowed by the tailoring guidelines. Such deviations represent potential risks
+and hence are highlighted in the project management plan, which is reviewed and
+approved.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

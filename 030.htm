@@ -1,0 +1,288 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>5.1 QUALITY CONCEPTS</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h4
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+h5
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:#354278;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.doctext, li.doctext, div.doctext
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+span.docemphasis1
+	{font-style:italic;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link=blue vlink=purple>
+
+<div class=Section1>
+
+<h3><span lang=EN-GB style='font-size:15.0pt;font-family:Arial'>5.1 QUALITY
+CONCEPTS</span></h3>
+
+<p class=doctext><span lang=EN-GB>Ensuring that the final software is of high
+quality is one of the prime concerns of a project manager. But how is software <span
+class=docemphasis1>quality</span> defined? The concept of software quality is
+not easily definable because software has many possible quality
+characteristics.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry01"><sup><span
+lang=EN-GB style='color:#003399'>1</span></sup></a><span lang=EN-GB> In
+practice, however, quality management often revolves around defects. Hence, we
+use <span class=docemphasis1>delivered defect density—</span>that is, the
+number of defects per unit size in the delivered software—as the definition of
+quality. This definition is currently the de facto industry standard.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry02"><sup><span
+lang=EN-GB style='color:#003399'>2</span></sup></a><span lang=EN-GB> Using it
+signals that the aim of a software project is to deliver the software with as
+few defects as possible.</span></p>
+
+<p class=doctext><span lang=EN-GB>What is a defect? Again, there can be no
+precise definition of a defect that will be general and widely applicable (is a
+software that misspells a word considered to have a defect?). In general, we
+can say a <span class=docemphasis1>defect</span> in software is something that
+causes the software to behave in a manner that is inconsistent with the
+requirements or needs of the customer.</span></p>
+
+<p class=doctext><span lang=EN-GB>Before considering techniques to manage
+quality, you must first understand the defect injection and removal cycle. Software
+development is a highly people-oriented activity and hence error-prone. </span>Defects
+can be injected in software at any stage during its evolution. That is, during
+the transformation from user needs to software to satisfy those needs, defects
+can be injected in all the transformation activities undertaken. These
+injection stages are primarily the requirements specification, the high-level
+design, the detailed design, and coding.</p>
+
+<p class=doctext>For high-quality software, the final product should have as
+few defects as possible. Hence, for delivery of high-quality software, active
+removal of defects is necessary; this removal takes place through the quality
+control activities of reviews and testing. Because the cost of defect removal
+increases as the latency of defects (the time gap between the introduction of a
+defect and its detection) increases,<a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry03"><sup><span
+style='color:#003399'>3</span></sup></a> any mature process will include
+quality control activities after each phase in which defects can potentially be
+injected. The activities for defect removal include requirements reviews,
+design reviews, code reviews, unit testing, integration testing, system
+testing, and acceptance testing (we do not include reviews of plan documents,
+although such reviews also help in improving quality of the software). <a
+href="http:// /JVXSL.asp?x=1&amp;mode=section&amp;sortKey=insertDate&amp;sortOrder=desc&amp;view=book&amp;xmlid=0-201-73721-3/ch05lev1sec1&amp;open=true&amp;title=New%20This%20Week&amp;catid=&amp;s=1&amp;b=1&amp;f=1&amp;t=1&amp;c=1&amp;u=1#ch05fig01#ch05fig01"><span
+style='color:#003399'>Figure 5.1</span></a> shows the process of defect
+injection and removal.</p>
+
+<h5 align=center style='text-align:center'><a name=ch05fig01></a><span
+style='font-size:10.5pt;font-family:Arial'>Figure 5.1. Defect injection and
+removal</span></h5>
+
+<p class=doctext align=center style='text-align:center'><img border=0
+width=500 height=264 src="030_files/image001.gif" alt="graphics/05fig01.gif"></p>
+
+<p class=doctext>The task of quality management is to plan suitable quality
+control activities and then to properly execute and control them to achieve the
+project's quality goals.</p>
+
+<h4><a name=ch05lev2sec1></a><span style='font-size:13.0pt;font-family:Arial'>5.1.1
+Procedural Approach to Quality Management</span></h4>
+
+<p class=doctext>As noted earlier, you detect defects by performing reviews or
+testing. Whereas <span class=docemphasis1>reviews</span> are structured,
+human-oriented processes, <span class=docemphasis1>testing</span> is the
+process of executing software (or parts of it) in an attempt to identify
+defects. In the <span class=docemphasis1>procedural</span> approach to quality
+management, procedures and guidelines for the review and testing activities are
+established. In a project, these activities are planned (that is, it is
+established which activity will be performed and when); during execution, they
+are carried out according to the defined procedures. In short, the procedural
+approach is the execution of certain processes at defined points to detect
+defects.</p>
+
+<p class=doctext>The procedural approach does not allow claims to be made about
+the percentage of defects removed or the quality of the software following the
+procedure's completion. In other words, merely executing a set of defect
+removal procedures does not provide a basis for judging their effectiveness or
+assessing the quality of the final code. Furthermore, such an approach is
+highly dependent on the quality of the procedure and the quality of its
+execution. For example, if the test planning is done carefully and the plan is thoroughly
+reviewed, the quality of the software after performance of the testing will be
+better than if testing was done but the test plan was not carefully thought out
+and the review was done perfunctorily. A key drawback in the procedural
+approach is the lack of quantitative means for project managers to assess the
+quality of the software produced; the only factor visible to project managers
+is whether the quality control tasks are executed.</p>
+
+<h4><a name=ch05lev2sec2></a><span style='font-size:13.0pt;font-family:Arial'>5.1.2
+Quantitative Approaches to Quality Management</span></h4>
+
+<p class=doctext>To better assess the effectiveness of the defect detection
+processes, an approach is needed that goes beyond asking, &quot;Has the method
+been executed?&quot; and looks at metrics data for evaluation. Based on this
+analysis of the data, you can decide whether more testing or reviews are
+needed. If controls are applied during the project based on quantitative data
+to achieve quantitative quality goals, then we say that a <span
+class=docemphasis1>quantitative</span> quality management approach is being
+applied.</p>
+
+<p class=doctext>Quantitative quality management has two key aspects: setting a
+quantitative quality goal and then managing the software development process
+quantitatively so that this quality goal is met (with a high degree of
+confidence).</p>
+
+<p class=doctext>A good quality management approach should provide warning
+signs early in the project and not only toward the end, when the options are
+limited. Early warnings allow for timely intervention. To achieve this goal, it
+is essential to predict the values of some parameters at various stages so that
+controlling them during project execution will ensure that the final product
+has the desired quality. If such predictions can be made, you can use the
+actual data gathered to judge whether the process has been applied effectively.
+With this approach, a defect detection process does not terminate with the
+declaration that the process has been executed; instead, the data from process
+execution are used to ensure that the process has been performed in a manner
+that exploited its full potential.</p>
+
+<p class=doctext>One approach to quantitatively control the quality of the software
+is to work with <span class=docemphasis1>software reliability</span> models.
+Most such models use the failure data during the final stages of testing to
+estimate the reliability of the software. These models can indicate whether the
+reliability is acceptable or more testing is needed. Unfortunately, they do not
+provide intermediate goals for the early phases of the project, and they have
+other limitations. Overall, such models are helpful in estimating the
+reliability of a software product, but they have a limited value for quality
+management. (More information is available on reliability models.<a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry04"><sup><span
+style='color:#003399'>4</span></sup></a><sup>,</sup><a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry05"><sup><span
+style='color:#003399'>5</span></sup></a><sup>,</sup><a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry06"><sup><span
+style='color:#003399'>6</span></sup></a>)</p>
+
+<p class=doctext><span lang=EN-GB>Another well-known quality concept in
+software is defect removal efficiency. For a quality control (QC) activity, we
+define the <span class=docemphasis1>defect removal efficiency</span> (DRE) as
+the percentage of existing total defects that are detected by the QC activity.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry05"><sup><span
+lang=EN-GB style='color:#003399'>5</span></sup></a><span lang=EN-GB> The DRE
+for the full life cycle of the project—that is, for all activities performed
+before the software is delivered—represents the in-process efficiency of the
+process. If the overall defect injection rate is known for the project, then
+DRE for the full life cycle also defines the quality (delivered defect density)
+of the software.</span></p>
+
+<p class=doctext><span lang=EN-GB>Although defect removal efficiency is a
+useful metric for evaluating a process and identifying areas of improvement, by
+itself it is not suitable for quality management. The main reason is that the
+DRE for a QC activity or the overall process can be computed only at the end of
+the project, when all defects and their origins are known. Hence, it provides
+no direct way to control quality during project execution.</span></p>
+
+<p class=doctext><span lang=EN-GB>Another approach to quantitative quality
+management is <span class=docemphasis1>defect prediction</span>. In this
+approach, you set the quality goal in terms of delivered defect density. You
+set the intermediate goals by estimating the number of defects that may be
+identified by various defect detection activities; then you compare the actual
+number of defects to the estimated defect levels.</span></p>
+
+<p class=doctext><span lang=EN-GB>This approach makes the management of quality
+closely resemble the management of effort and schedule—the two other major
+success parameters of a project. A target is first set for the quality of the
+delivered software. From this target, the values of chosen parameters at
+various stages in the project are estimated; that is, milestones are
+established. These milestones are chosen so that, if the estimates are met, the
+quality of the final software is likely to meet the desired level. During project
+execution, the actual values of the parameters are measured and compared to the
+estimated levels to determine whether the project is traveling the desired path
+or whether some actions need to be taken to ensure that the final software has
+the desired quality.</span></p>
+
+<p class=doctext><span lang=EN-GB>The effectiveness of this approach depends on
+how well you can predict the defect levels at various stages of the project. It
+is known that the defect rate follows the same pattern as the effort rate, with
+both following the Rayleigh curve.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry05"><sup><span
+lang=EN-GB style='color:#003399'>5</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry07"><sup><span
+lang=EN-GB style='color:#003399'>7</span></sup></a><sup><span lang=EN-GB>,</span></sup><a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry08"><sup><span
+lang=EN-GB style='color:#003399'>8</span></sup></a><span lang=EN-GB> In other
+words, the number of defects found at the start of the project is small but
+keeps increasing until it reaches a peak (around unit testing time) before it
+begins to decline again. Because a process has defined points for defect
+detection, you can also specify this curve in terms of percentages of total
+defects detected at the various detection stages. And from the estimate of the
+defect injection rate and size, you can estimate the total number of defects. This
+approach for defect level prediction is similar to both the base defect model
+and the STEER approach of IBM's Federal Systems Division.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry05"><sup><span
+lang=EN-GB style='color:#003399'>5</span></sup></a></p>
+
+<p class=doctext><span lang=EN-GB>Yet another approach is to use <span
+class=docemphasis1>statistical process control</span> (SPC) for managing
+quality (</span><a
+href="http:// /?xmlid=0-201-73721-3/ch07#ch07"><span
+lang=EN-GB style='color:#003399'>Chapter 7</span></a><span lang=EN-GB> includes
+a brief discussion of SPC). In this approach, you set performance expectations
+of the various QC processes, such as testing and reviews, in terms of control
+limits. If the actual performance of the QC task is not within the limits, you
+analyze the situation and take suitable action. The control limits resemble
+prediction of defect levels based on past performance but can also be used for
+monitoring quality activities at a finer level, such as review or unit testing
+of a module.</span></p>
+
+<p class=doctext><span lang=EN-GB>When you use a performance prediction
+approach and the actual number of defects is less than the target, the approach
+has too many uncertainties for you to say with surety that the removal process
+was not executed properly. As a result, you must look at other indicators to
+determine the cause.</span><a
+href="http:// /?xmlid=0-201-73721-3/ch05lev1sec5#ch05entry05"><sup><span
+lang=EN-GB style='color:#003399'>5</span></sup></a><span lang=EN-GB> In other
+words, if the actual data are out of range, the project manager will look at
+other indicators to decide what the actual situation is and what action, if
+any, is needed.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

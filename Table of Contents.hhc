@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Copyright">
+		<param name="Local" value="001.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Preface">
+		<param name="Local" value="002.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Chapter 1. Managing Software Projects">
+		<param name="Local" value="003.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PROCESSES AND PROJECT MANAGEMENT">
+			<param name="Local" value="004.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PROJECT MANAGEMENT AND THE CMM">
+			<param name="Local" value="005.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PROJECT MANAGEMENT AT INFOSYS">
+			<param name="Local" value="006.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="OVERVIEW OF THE ACIC CASE STUDY">
+			<param name="Local" value="007.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="SUMMARY">
+			<param name="Local" value="008.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="REFERENCES">
+			<param name="Local" value="009.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Part I: Project Planning">
+		<param name="Local" value="010.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 2. The Project Planning Infrastructure">
+			<param name="Local" value="011.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE PROCESS DATABASE">
+				<param name="Local" value="012.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE PROCESS CAPABILITY BASELINE">
+				<param name="Local" value="013.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PROCESS ASSETS AND THE BODY OF KNOWLEDGE SYSTEM">
+				<param name="Local" value="014.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="015.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REFERENCES">
+				<param name="Local" value="016.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 3. Process Planning">
+			<param name="Local" value="017.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE INFOSYS DEVELOPMENT PROCESS">
+				<param name="Local" value="018.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REQUIREMENT CHANGE MANAGEMENT">
+				<param name="Local" value="019.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PROCESS PLANNING FOR THE ACIC PROJECT">
+				<param name="Local" value="020.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="021.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REFERENCES">
+				<param name="Local" value="022.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 4. Effort Estimation and Scheduling">
+			<param name="Local" value="023.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ESTIMATION AND SCHEDULING CONCEPTS">
+				<param name="Local" value="024.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="EFFORT ESTIMATION">
+				<param name="Local" value="025.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SCHEDULING">
+				<param name="Local" value="026.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="027.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REFERENCES">
+				<param name="Local" value="028.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 5. Quality Planning">
+			<param name="Local" value="029.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="QUALITY CONCEPTS">
+				<param name="Local" value="030.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="QUANTITATIVE QUALITY MANAGEMENT PLANNING">
+				<param name="Local" value="031.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DEFECT PREVENTION PLANNING">
+				<param name="Local" value="032.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE QUALITY PLAN OF THE ACIC PROJECT">
+				<param name="Local" value="033.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="034.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REFERENCES">
+				<param name="Local" value="035.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 6. Risk Management">
+			<param name="Local" value="036.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CONCEPTS OF RISKS AND RISK MANAGEMENT">
+				<param name="Local" value="037.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="RISK ASSESSMENT">
+				<param name="Local" value="038.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="RISK CONTROL">
+				<param name="Local" value="039.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="EXAMPLES">
+				<param name="Local" value="040.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="041.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REFERENCES">
+				<param name="Local" value="042.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 7. Measurement and Tracking Planning">
+			<param name="Local" value="043.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CONCEPTS IN MEASUREMENT">
+				<param name="Local" value="044.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MEASUREMENTS">
+				<param name="Local" value="045.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PROJECT TRACKING">
+				<param name="Local" value="046.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE ACIC MEASUREMENT AND TRACKING PLAN">
+				<param name="Local" value="047.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="048.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REFERENCES">
+				<param name="Local" value="049.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 8. The Project Management Plan">
+			<param name="Local" value="050.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="TEAM MANAGEMENT">
+				<param name="Local" value="051.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CUSTOMER COMMUNICATION AND ISSUE RESOLUTION">
+				<param name="Local" value="052.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE STRUCTURE OF THE PROJECT MANAGEMENT PLAN">
+				<param name="Local" value="053.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE ACIC PROJECT PLAN">
+				<param name="Local" value="054.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="055.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 9. Configuration Management">
+			<param name="Local" value="056.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CONCEPTS IN CONFIGURATION MANAGEMENT">
+				<param name="Local" value="057.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE CONFIGURATION MANAGEMENT PROCESS">
+				<param name="Local" value="058.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE ACIC CONFIGURATION MANAGEMENT PLAN">
+				<param name="Local" value="059.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="060.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REFERENCES">
+				<param name="Local" value="061.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Part II: Project Execution and Closure">
+		<param name="Local" value="062.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 10. Reviews">
+			<param name="Local" value="063.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE REVIEW PROCESS">
+				<param name="Local" value="064.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DATA COLLECTION">
+				<param name="Local" value="065.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MONITORING AND CONTROL">
+				<param name="Local" value="066.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="INTRODUCTION OF REVIEWS AND THE NAH SYNDROME">
+				<param name="Local" value="067.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="068.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REFERENCES">
+				<param name="Local" value="069.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 11. Project Monitoring and Control">
+			<param name="Local" value="070.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PROJECT TRACKING">
+				<param name="Local" value="071.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MILESTONE ANALYSIS">
+				<param name="Local" value="072.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ACTIVITY-LEVEL ANALYSIS USING SPC">
+				<param name="Local" value="073.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DEFECT ANALYSIS AND PREVENTION">
+				<param name="Local" value="074.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PROCESS MONITORING AND AUDIT">
+				<param name="Local" value="075.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="076.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REFERENCES">
+				<param name="Local" value="077.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 12. Project Closure">
+			<param name="Local" value="078.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PROJECT CLOSURE ANALYSIS">
+				<param name="Local" value="079.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="THE ACIC CLOSURE ANALYSIS REPORT">
+				<param name="Local" value="080.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SUMMARY">
+				<param name="Local" value="081.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="REFERENCES">
+				<param name="Local" value="082.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+</UL>
+</BODY></HTML>
